@@ -1,0 +1,99 @@
+{
+  "ID": "Cow",
+  "Order": 11,
+  "Name": "【上位】牛乳無料",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "※90％の確率でプレイヤーのダメージを引き受ける",
+    "ただし受けるダメージは2倍"
+  ],
+  "MobTypes": [
+    "Cow"
+  ],
+  "Skills": {
+    "Beacon": {
+      "Upgrades": {
+        "100": {
+          "Buffs": {
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1"
+          }
+        },
+        "100,90": {
+          "Range": "+5",
+          "Duration": "+7",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false,
+            "Resistance": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,90": {
+          "Damage": "+3"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+2",
+          "Timer": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+25"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+15",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "100": {
+          "Redirect": "+10",
+          "Chance": "+90"
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+2",
+          "Chance": "+50"
+        }
+      }
+    }
+  }
+}
