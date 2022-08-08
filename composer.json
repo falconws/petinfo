@@ -1,0 +1,20 @@
+{
+    "name": "falconws/petinfo",
+    "description": "MyPet info view",
+    "type": "project",
+    "require": {
+        "jenssegers/blade": "^1.4",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Falconws\\Petinfo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Junki Kizuka",
+            "email": "k.falconws@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+  "ID": "Bee1",
+  "Order": 7,
+  "Name": "斥候",
+  "Icon": {
+    "Material": "iron_block"
+  },
+  "RequiredLevel": 10,
+  "MaxLevel": 50,
+  "Description": [
+    "まだ成長途中のハチ",
+    "",
+    "△　攻撃（遠距離攻撃あり）",
+    "△　サポート",
+    "※50マスまでの飛行制限",
+    "※Lv50以上は成長なし"
+  ],
+  "MobTypes": [
+    "Bee"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "10": {
+          "rows": "+1"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "1,30,50": {
+          "Range": "+6",
+          "Duration": "+16",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false
+          }
+        },
+        "1,20,40": {
+          "Buffs": {
+            "JumpBoost": "+1",
+            "Luck": false,
+            "NightVision": true,
+            "Speed": "+1",
+            "Invisibility": true
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "1,15,20,30,40,50": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "1,30": {
+          "Health": "+2",
+          "Timer": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "10,25,40": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "10": {
+          "Range": "+16"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "10": {
+          "Damage": "+2",
+          "Rate": "+100",
+          "Projectile": "Arrow"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+5",
+          "JumpHeight": "+1",
+          "FlyLimit": "+50",
+          "FlyRegenRate": "+10",
+          "CanFly": true
+        }
+      }
+    }
+  }
+}

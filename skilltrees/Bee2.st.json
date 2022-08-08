@@ -1,0 +1,134 @@
+{
+  "ID": "Bee2",
+  "Order": 8,
+  "Name": "兵隊",
+  "Icon": {
+    "Material": "gold_block"
+  },
+  "RequiredLevel": 50,
+  "MaxLevel": 90,
+  "Description": [
+    "女王を守る兵隊",
+    "○　攻撃（遠距離攻撃あり）",
+    "※10％の確率でプレイヤーのダメージを引き受ける",
+    "※Lv90以上は成長なし"
+  ],
+  "MobTypes": [
+    "Bee"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "50": {
+          "rows": "+2"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "50": {
+          "Range": "+8",
+          "Duration": "+60",
+          "Count": "+3",
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        },
+        "80,90": {
+          "Range": "+4",
+          "Duration": "+6",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false,
+            "Resistance": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "1,15,20,30,40,50,60,70,80": {
+          "Damage": "+2"
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "50": {
+          "Duration": "+2",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "1,30": {
+          "Health": "+2",
+          "Timer": "+1"
+        },
+        "50,70,90": {
+          "Health": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,70,90": {
+          "Health": "+35"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "10": {
+          "Range": "+8"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "1": {
+          "Damage": "+3",
+          "Rate": "+90",
+          "Projectile": "Arrow"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+10",
+          "JumpHeight": "+3",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "50": {
+          "Redirect": "+50",
+          "Chance": "+10"
+        }
+      }
+    }
+  }
+}

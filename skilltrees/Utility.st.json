@@ -1,0 +1,133 @@
+{
+  "ID": "Utility",
+  "Order": 40,
+  "Name": "【基本職】Utility",
+  "Icon": {
+    "Material": "trapped_chest"
+  },
+  "RequiredLevel": 1,
+  "MaxLevel": 100,
+  "Description": [
+    "○サポート向けビーコンあり",
+    "○60秒間飛行可能（クールタイム10秒）",
+    "○10%の確率でプレイヤーのダメージ無効化",
+    "✕戦闘向けステータス低め"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "1": {
+          "rows": "+1",
+          "drop": true
+        },
+        "3": {
+          "rows": "+1",
+          "drop": false
+        },
+        "5": {
+          "rows": "+1",
+          "drop": false
+        },
+        "7": {
+          "rows": "+1",
+          "drop": false
+        },
+        "10": {
+          "rows": "+2",
+          "drop": false
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "30": {
+          "Range": "+5",
+          "Duration": "+12",
+          "Count": "+2",
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "WaterBreathing": true,
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": false,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%5>1<100": {
+          "Damage": "+0.5"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "2": {
+          "Health": "+2",
+          "Timer": "+15"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "2": {
+          "Health": "+1.5"
+        },
+        "5": {
+          "Health": "+3"
+        },
+        "8": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "6": {
+          "Range": "+1",
+          "Exp": false
+        },
+        "9": {
+          "Range": "+1",
+          "Exp": false
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+5",
+          "JumpHeight": "+1",
+          "FlyLimit": "+60",
+          "FlyRegenRate": "+10",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "1": {
+          "Chance": "+10"
+        }
+      }
+    }
+  }
+}

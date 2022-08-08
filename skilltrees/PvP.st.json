@@ -1,0 +1,102 @@
+{
+  "ID": "PvP",
+  "Order": 15,
+  "Name": "PvP",
+  "Icon": {
+    "Material": "diamond_sword"
+  },
+  "RequiredLevel": 1,
+  "MaxLevel": 100,
+  "Description": [
+    "<blue><bold>PvPを行う際に同じステータスに",
+    "<blue><bold>するために用意されたモードです。",
+    "Lvによる成長はありませんので",
+    "Lv1でもLv100でも同じステータスとなります。",
+    "※飛行可能"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": false,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "1": {
+          "Damage": "+5"
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "5": {
+          "Duration": "+3",
+          "Chance": "+5"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "1": {
+          "Health": "+5",
+          "Timer": "+10"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "1": {
+          "Health": "+80"
+        }
+      }
+    },
+    "Lightning": {
+      "Upgrades": {
+        "1": {
+          "Damage": "+15",
+          "Chance": "+1"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "CanFly": true
+        }
+      }
+    },
+    "Slow": {
+      "Upgrades": {
+        "1": {
+          "Duration": "+2",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "1": {
+          "Reflection": "+50",
+          "Chance": "+5"
+        }
+      }
+    }
+  }
+}

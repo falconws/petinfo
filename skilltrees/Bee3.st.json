@@ -1,0 +1,182 @@
+{
+  "ID": "Bee3",
+  "Order": 9,
+  "Name": "女王",
+  "Requirements": [
+    "Permission"
+  ],
+  "Icon": {
+    "Material": "diamond_block",
+    "Glowing": true
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 120,
+  "Description": [
+    "蜂を統べる女王",
+    "✕　攻撃（遠距離攻撃あり）",
+    "○　サポート",
+    "○　移動",
+    "※60％の確率でプレイヤーのダメージを引き受ける"
+  ],
+  "MobTypes": [
+    "Bee"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "50": {
+          "rows": "+6"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Range": "+32",
+          "Duration": "+60",
+          "Count": "+5",
+          "Buffs": {
+            "Absorption": "+1",
+            "FireResistance": true,
+            "JumpBoost": "+2",
+            "Luck": false,
+            "Resistance": "+1",
+            "WaterBreathing": true,
+            "Regeneration": "+1"
+          }
+        },
+        "100": {
+          "Range": "+16",
+          "Duration": "+30",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false,
+            "Resistance": "+1",
+            "Speed": "+1"
+          }
+        },
+        "120": {
+          "Range": "+16",
+          "Duration": "+30",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+2",
+            "Speed": "+2",
+            "Strength": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,110,120,50": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "90": {
+          "Health": "+10",
+          "Timer": "+4"
+        },
+        "120": {
+          "Health": "+10",
+          "Timer": "-2"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,110,120,50,70,90": {
+          "Health": "+50"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "90": {
+          "Chance": "+100"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "90": {
+          "Range": "+16"
+        }
+      }
+    },
+    "Poison": {
+      "Upgrades": {
+        "100,110,120,90": {
+          "Duration": "+10",
+          "Chance": "+20"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "1": {
+          "Damage": "+1",
+          "Rate": "+70",
+          "Projectile": "Arrow"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+20",
+          "JumpHeight": "+2",
+          "CanFly": true
+        },
+        "120": {
+          "Active": true,
+          "Speed": "+10",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "50": {
+          "Redirect": "+50",
+          "Chance": "+60"
+        },
+        "100,110,120": {
+          "Redirect": "+10"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "90": {
+          "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "120": {
+          "Reflection": "+100",
+          "Chance": "+10"
+        }
+      }
+    }
+  }
+}

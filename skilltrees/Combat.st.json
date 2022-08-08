@@ -1,0 +1,106 @@
+{
+  "ID": "Combat",
+  "Order": 39,
+  "Name": "【基本職】Combat",
+  "Icon": {
+    "Material": "stone_axe"
+  },
+  "MaxLevel": 100,
+  "Description": [
+    "○　戦闘関連のステータスが高めに設定されています。",
+    "✕　騎乗することができません"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Beacon": {
+      "Upgrades": {
+        "50": {
+          "Range": "+2",
+          "Duration": "+18",
+          "Count": "+2",
+          "Buffs": {
+            "Luck": false,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+2",
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "1": {
+          "Damage": "+1.5"
+        },
+        "3": {
+          "Damage": "+1.5"
+        },
+        "6": {
+          "Damage": "+1.5"
+        },
+        "8": {
+          "Damage": "+1.5"
+        },
+        "100": {
+          "Damage": "+2"
+        },
+        "50,70": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "10,100,30,50,70,90": {
+          "Health": "+1",
+          "Timer": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%10>1<100": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "10": {
+          "Chance": "+15"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {}
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "5": {
+          "Reflection": "+15",
+          "Chance": "+10"
+        },
+        "9": {
+          "Reflection": "+5",
+          "Chance": "+8"
+        }
+      }
+    }
+  }
+}
