@@ -10,5 +10,4 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip
 RUN docker-php-ext-install zip
-USER www-data
 RUN composer install
