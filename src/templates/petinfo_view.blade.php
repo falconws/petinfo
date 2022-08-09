@@ -22,8 +22,8 @@
                 <td class="style_td" colspan="3"><img src="../static/img/mobheads/{{ $data['MobTypes'] }}.png" width="32" height="32"> {{ $data['MobTypesJp'] }}</td>
             </tr>
             <tr>
-                <th class="style_th">要求レベル</th>
-                <td class="style_td" colspan="3">{{ $data['RequiredLevel'] }}</td>
+                <th class="style_th">説明</th>
+                <td class="style_td" colspan="3">{{ $data['Description'] }}</td>
             </tr>
             <tr>
                 <th class="style_th">最高レベル</th>
