@@ -19,7 +19,7 @@
         <tbody>
             <tr>
                 <th class="style_th">設定可能なペット</th>
-                <td class="style_td" colspan="3"><img src="../static/img/mobheads/{{ $data['MobTypes'] }}.png" width="32" height="32">{{ $data['MobTypesJp'] }}</td>
+                <td class="style_td" colspan="3"><img src="../static/img/mobheads/{{ $data['MobTypes'] }}.png" width="32" height="32"> {{ $data['MobTypesJp'] }}</td>
             </tr>
             <tr>
                 <th class="style_th">要求レベル</th>
@@ -50,8 +50,11 @@
             @endif
             @foreach ($data['Beacon_details'] as $beacon_detail)
                 @foreach ($beacon_detail as $buff => $level)
+                @php
+                    $buff = explode('_', $buff);
+                @endphp
             <tr>
-                <td class="style_td" rowspan="{{ count($level) }}">{{ $buff }}</td>
+                <td class="style_td" rowspan="{{ count($level) }}"><img src="../static/img/beacon/{{ $buff[0] }}.png" width="32" height="32"> {{ $buff[1] }}</td>
                     @foreach ($level as $effect_level => $required_level)
                 <td class="style_td">{{ $effect_level }}<span style="color:gray">
                 </td>

@@ -104,7 +104,7 @@ class PetInfo
                     foreach ($ability['Buffs'] as $buff => $effect_level) {
                         $effect_level = $effect_level === true ? '-' : $effect_level;
                         if ($effect_level) {
-                            $for_view['Beacon_details'][] = [$this->translate_beacon_buff[$buff] => [$effect_level => $required_level]];
+                            $for_view['Beacon_details'][] = [$buff . '_' . $this->translate_beacon_buff[$buff] => [$effect_level => $required_level]];
                         }
                     }
                 }
