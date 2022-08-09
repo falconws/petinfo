@@ -12,6 +12,53 @@ class PetInfo
     private array $skilltrees;
     private array $skills_for_view;
 
+    // For now publishing 30 mobs only...
+    private array $translate_mobname = array(
+        'Zombie' => 'ゾンビ',
+        'ZombieVillager' => '村人ゾンビ',
+        'Drowned' => 'ドラウンド',
+        'ZombieHorse' => 'ゾンビホース',
+        'ZombifiedPiglin' => 'ゾンビピグリン',
+        'Skeleton' => 'スケルトン',
+        'Stray' => 'ストレイ',
+        'Creeper' => 'クリーパー',
+        'Slime' => 'スライム',
+        'Phantom' => 'ファントム',
+        'Enderman' => 'エンダーマン',
+        'Endermite' => 'エンダーマイト',
+        'Blaze' => 'ブレイズ',
+        'WitherSkeleton' => 'ウィザースケルトン',
+        'Wither' => 'ウィザー',
+        'Illusioner' => 'イリュージョナー',
+        'Ravager' => 'ラヴェジャー',
+        'Vex' => 'ヴェックス',
+        'Chicken' => 'ニワトリ',
+        'Cow' => 'ウシ',
+        'Mooshroom' => 'ムーシュルーム',
+        'Horse' => 'ウマ',
+        'Bee' => 'ミツバチ',
+        'Fox' => 'キツネ',
+        'Panda' => 'パンダ',
+        'Squid' => 'イカ',
+        'Turtle' => 'カメ',
+        'Wolf' => 'オオカミ',
+        'Salmon' => 'サケ',
+        'Snowman' => 'スノーゴーレム',
+        'Villager' => '村人'
+    );
+    private array $translate_beacon_buff = array(
+        'Absorption' => '衝撃吸収',
+        'FireResistance' => '火炎耐性',
+        'JumpBoost' => '跳躍力上昇',
+        'NightVision' => '暗視',
+        'Resistance' => '防御力上昇',
+        'Speed' => '移動速度',
+        'Strength' => '攻撃力上昇',
+        'WaterBreathing' => '水中呼吸',
+        'Invisibility' => '透明化',
+        'Regeneration' => '再生能力'
+    );
+
     function __construct()
     {
         $this->load_env();
@@ -29,10 +76,7 @@ class PetInfo
     {
         foreach ($this->skilltrees as $skilltree) {
             $for_view['Name'] = $skilltree['Name'];
-
-            // @TODO Translate English to Japanese
-            $for_view['MobTypes'] = $skilltree['MobTypes'][0] === '*' ? '全て' : $skilltree['MobTypes'][0];
-
+            $for_view['MobTypes'] = $skilltree['MobTypes'][0] === '*' ? '全て' : $this->translate_mobname[$skilltree['MobTypes'][0]];
             $for_view['RequiredLevel'] = $skilltree['RequiredLevel'] ?? 'なし';
             $for_view['MaxLevel'] = $skilltree['MaxLevel'] ?? 'なし';
 
@@ -60,8 +104,7 @@ class PetInfo
                     foreach ($ability['Buffs'] as $buff => $effect_level) {
                         $effect_level = $effect_level === true ? '-' : $effect_level;
                         if ($effect_level) {
-                            // @TODO Translate English to Japanese ($buff)
-                            $for_view['Beacon_details'][] = [$buff => [$effect_level => $required_level]];
+                            $for_view['Beacon_details'][] = [$this->translate_beacon_buff[$buff] => [$effect_level => $required_level]];
                         }
                     }
                 }
