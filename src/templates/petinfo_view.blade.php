@@ -19,7 +19,7 @@
         <tbody>
             <tr>
                 <th class="style_th">設定可能なペット</th>
-                <td class="style_td" colspan="3">{{ $data['MobTypes'][0] }}</td>
+                <td class="style_td" colspan="3">{{ $data['MobTypes'] }}</td>
             </tr>
             <tr>
                 <th class="style_th">要求レベル</th>
@@ -31,80 +31,37 @@
             </tr>
             <tr>
                 <th class="style_th">飛行</th>
-                <td class="style_td" colspan="3">@TODO</td>
+                <td class="style_td" colspan="3">{{ $data['CanFly'] }}</td>
             </tr>
             <tr>
                 <th class="style_th">バックパック</th>
-                <td class="style_td" colspan="3">@TODO あり（Lv50で18マス）</td>
+                <td class="style_td" colspan="3">{{ $data['Backpack'] }}</td>
             </tr>
             <tr>
-                <th class="style_th" rowspan="12">ビーコン</th>
-                <td class="style_td" colspan="3">あり（選択可能数：Lv50で3個、Lv80で4個、Lv90で5個）</td>
+                <th class="style_th" rowspan="100">ビーコン</th>
+                <td class="style_td" colspan="3">{{ $data['Beacon'] }}</td>
             </tr>
+            @if ($data['Beacon'] == 'あり')
             <tr>
                 <th class="style_th">効果</th>
                 <th class="style_th">効果レベル</th>
                 <th class="style_th">要求レベル</th>
             </tr>
+            @endif
+            @foreach ($data['Beacon_details'] as $beacon_detail)
+                @foreach ($beacon_detail as $buff => $level)
             <tr>
-                <td class="style_td" rowspan="3"><img src="./?plugin=ref&amp;page=MyPet&amp;src=icon03.png"
-                        alt="icon03.png" title="icon03.png" width="18" height="18"> 攻撃力上昇</td>
-                <td class="style_td">1<span style="color:gray"><span
-                            style="font-size:10px;display:inline-block;line-height:130%;text-indent:0">※</span></span>
+                <td class="style_td" rowspan="{{ count($level) }}">{{ $buff }}</td>
+                    @foreach ($level as $effect_level => $required_level)
+                <td class="style_td">{{ $effect_level }}<span style="color:gray">
                 </td>
-                <td class="style_td">50</td>
+                <td class="style_td">{{ $required_level }}</td>
+                    @endforeach
             </tr>
-            <tr>
-                <td class="style_td">2</td>
-                <td class="style_td">80</td>
-            </tr>
-            <tr>
-                <td class="style_td">3</td>
-                <td class="style_td">90</td>
-            </tr>
-            <tr>
-                <td class="style_td" rowspan="3"><img src="./?plugin=ref&amp;page=MyPet&amp;src=icon04.png"
-                        alt="icon04.png" title="icon04.png" width="18" height="18"> 再生能力</td>
-                <td class="style_td">1<span style="color:gray"><span
-                            style="font-size:10px;display:inline-block;line-height:130%;text-indent:0">※</span></span>
-                </td>
-                <td class="style_td">50</td>
-            </tr>
-            <tr>
-                <td class="style_td">2</td>
-                <td class="style_td">80</td>
-            </tr>
-            <tr>
-                <td class="style_td">3</td>
-                <td class="style_td">90</td>
-            </tr>
-            <tr>
-                <td class="style_td"><img src="./?plugin=ref&amp;page=MyPet&amp;src=icon07.png" alt="icon07.png"
-                        title="icon07.png" width="18" height="18"> 暗視</td>
-                <td class="style_td">-</td>
-                <td class="style_td">50</td>
-            </tr>
-            <tr>
-                <td class="style_td" rowspan="2"><img src="./?plugin=ref&amp;page=MyPet&amp;src=icon08.png"
-                        alt="icon08.png" title="icon08.png" width="18" height="18"> 耐性</td>
-                <td class="style_td">1<span style="color:gray"><span
-                            style="font-size:10px;display:inline-block;line-height:130%;text-indent:0">※</span></span>
-                </td>
-                <td class="style_td">50</td>
-            </tr>
-            <tr>
-                <td class="style_td">2</td>
-                <td class="style_td">80</td>
-            </tr>
-            <tr>
-                <td class="style_td"><img src="./?plugin=ref&amp;page=MyPet&amp;src=icon09.png" alt="icon09.png"
-                        title="icon09.png" width="18" height="18"> 火炎耐性</td>
-                <td class="style_td">-</td>
-                <td class="style_td">50</td>
-            </tr>
+                @endforeach
+            @endforeach
         </tbody>
     </table>
-
     @endforeach
 </body>
 
