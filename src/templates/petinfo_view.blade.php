@@ -6,7 +6,7 @@
 <head>
     <title>petinfo</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://toraden.com/wiki/skin/pukiwiki.css">
+    <link rel="stylesheet" href="../static/css/pukiwiki.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <tbody>
             <tr>
                 <th class="style_th">設定可能なペット</th>
-                <td class="style_td" colspan="3">{{ $data['MobTypes'] }}</td>
+                <td class="style_td" colspan="3"><img src="../static/img/mobheads/{{ $data['MobTypes'] }}.png" width="32" height="32">{{ $data['MobTypesJp'] }}</td>
             </tr>
             <tr>
                 <th class="style_th">要求レベル</th>

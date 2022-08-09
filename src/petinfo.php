@@ -75,7 +75,8 @@ class PetInfo
     {
         foreach ($this->skilltrees as $skilltree) {
             $for_view['Name'] = $skilltree['Name'];
-            $for_view['MobTypes'] = $skilltree['MobTypes'][0] === '*' ? '全て' : $this->translate_mobname[$skilltree['MobTypes'][0]];
+            $for_view['MobTypes'] = $skilltree['MobTypes'][0];
+            $for_view['MobTypesJp'] = $skilltree['MobTypes'][0] === '*' ? '全て' : $this->translate_mobname[$skilltree['MobTypes'][0]];
             $for_view['RequiredLevel'] = $skilltree['RequiredLevel'] ?? 'なし';
             $for_view['MaxLevel'] = $skilltree['MaxLevel'] ?? 'なし';
 
