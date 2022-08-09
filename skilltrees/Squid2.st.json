@@ -1,0 +1,130 @@
+{
+  "ID": "Squid2",
+  "Order": 4,
+  "Name": "【特殊上位】真なるイカフライ",
+  "Icon": {
+    "Material": "nether_star",
+    "Glowing": true
+  },
+  "RequiredLevel": 100,
+  "MaxLevel": 120,
+  "Description": [
+    "イカの本気",
+    "※60マスまでの飛行制限"
+  ],
+  "MobTypes": [
+    "Squid"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100,120": {
+          "rows": "+1"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "100": {
+          "Range": "+10",
+          "Duration": "+60",
+          "Count": "+10",
+          "Buffs": {
+            "Absorption": "+1",
+            "FireResistance": true,
+            "JumpBoost": "+1",
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+1",
+            "WaterBreathing": true,
+            "Invisibility": true,
+            "Regeneration": "+1"
+          }
+        },
+        "120": {
+          "Range": "+10",
+          "Buffs": {
+            "Luck": false,
+            "Speed": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "6": {
+          "Active": true
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+1",
+          "Timer": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,110,120": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Lightning": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+200",
+          "Chance": "+1"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+100",
+          "JumpHeight": "-1",
+          "FlyLimit": "+60",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "120": {
+          "Chance": "+1"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "100": {
+          "Active": true
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "120": {
+          "Damage": "+2",
+          "Chance": "+1"
+        }
+      }
+    }
+  }
+}

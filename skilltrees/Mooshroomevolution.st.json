@@ -1,0 +1,156 @@
+{
+  "ID": "Mooshroomevolution",
+  "Order": 38,
+  "Name": "【特殊上位】シチューおかわり",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 100,
+  "MaxLevel": 120,
+  "Description": [
+    "サポート、防御特化",
+    "攻撃力最低値"
+  ],
+  "MobTypes": [
+    "Mooshroom"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100": {
+          "rows": "+6"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Range": "+8",
+          "Duration": "+15",
+          "Count": "+4",
+          "Buffs": {
+            "Absorption": "+1",
+            "Luck": false,
+            "Resistance": "+1",
+            "Speed": "+1"
+          }
+        },
+        "95": {
+          "Count": "+1",
+          "Buffs": {
+            "Absorption": "+1",
+            "Luck": false,
+            "NightVision": true
+          }
+        },
+        "100": {
+          "Range": "+32",
+          "Duration": "+45",
+          "Count": "+3",
+          "Buffs": {
+            "Absorption": "+2",
+            "JumpBoost": "+2",
+            "Luck": false,
+            "Resistance": "+3",
+            "Speed": "+1",
+            "Regeneration": "+3"
+          }
+        },
+        "120": {
+          "Range": "+10",
+          "Duration": "+30",
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "10": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,120,50": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100,120,50,60,70,80,90": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<100": {
+          "Health": "+3"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "100,120": {
+          "Range": "+5"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "100": {
+          "Active": true,
+          "Speed": "+30",
+          "JumpHeight": "+1",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "100": {
+          "Redirect": "+10",
+          "Chance": "+50"
+        },
+        "110,120": {
+          "Chance": "+25"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "90": {
+          "Damage": "+1",
+          "Chance": "+100"
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "100": {
+          "Reflection": "+200",
+          "Chance": "+20"
+        },
+        "120": {
+          "Chance": "+30"
+        }
+      }
+    }
+  }
+}

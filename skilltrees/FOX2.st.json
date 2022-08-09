@@ -1,57 +1,46 @@
 {
-  "ID": "chicken",
-  "Order": 28,
-  "Name": "【上位】ニワトリの王",
-  "Requirements": [
-    "Permission"
-  ],
+  "ID": "FOX2",
+  "Order": 43,
+  "Name": "【上位】キツネの嫁入り：蒼",
   "Icon": {
-    "Material": "nether_star"
+    "Material": "sweet_berries"
   },
-  "RequiredLevel": 90,
+  "RequiredLevel": 80,
   "MaxLevel": 100,
   "Description": [
-    "※1％の確率でプレイヤーのダメージを引き受ける"
+    "サポートモード"
   ],
   "MobTypes": [
-    "Chicken"
+    "Fox"
   ],
   "Skills": {
     "Backpack": {
       "Upgrades": {
-        "80": {
-          "rows": "+5"
+        "100,80,90": {
+          "rows": "+2"
         }
       }
     },
     "Beacon": {
       "Upgrades": {
-        "90": {
-          "Range": "+5",
-          "Duration": "+20",
-          "Count": "+1",
+        "100,80": {
           "Buffs": {
-            "Absorption": "+1",
-            "JumpBoost": "+2",
+            "FireResistance": true,
             "Luck": false,
-            "Speed": "+2",
-            "WaterBreathing": true
-          }
-        },
-        "95": {
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false,
+            "NightVision": true,
             "Resistance": "+2",
+            "Speed": "+2",
+            "Strength": "+1",
+            "WaterBreathing": true,
+            "Invisibility": true,
             "Regeneration": "+1"
           }
         },
-        "100": {
-          "Range": "+5",
+        "100,80,90,95": {
+          "Range": "+2",
           "Duration": "+10",
           "Count": "+1",
           "Buffs": {
-            "FireResistance": false,
             "Luck": false
           }
         }
@@ -70,47 +59,43 @@
     },
     "Damage": {
       "Upgrades": {
-        "10,100,20,30,40,50,60,70,80,90": {
-          "Damage": "+0.5"
+        "100,80": {
+          "Damage": "+1"
         }
       }
     },
     "Heal": {
       "Upgrades": {
-        "100": {
-          "Health": "+1"
-        },
-        "10,20,50,90": {
-          "Health": "+0.5",
-          "Timer": "+1"
+        "100,80,90": {
+          "Health": "+5"
         }
       }
     },
     "Life": {
       "Upgrades": {
-        "%1>1<100": {
-          "Health": "+0.5"
+        "100,80,90": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Lightning": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+5",
+          "Chance": "+10"
         }
       }
     },
     "Pickup": {
       "Upgrades": {
-        "1": {
-          "Range": "+5"
-        }
-      }
-    },
-    "Poison": {
-      "Upgrades": {
-        "10": {
-          "Duration": "+10",
-          "Chance": "+10"
+        "80": {
+          "Range": "+8"
         }
       }
     },
     "Ride": {
       "Upgrades": {
-        "100": {
+        "1": {
           "Active": true,
           "Speed": "+40",
           "JumpHeight": "+2",
@@ -120,9 +105,17 @@
     },
     "Shield": {
       "Upgrades": {
-        "100": {
-          "Redirect": "+100",
-          "Chance": "+1"
+        "1": {
+          "Redirect": "+50",
+          "Chance": "+40"
+        }
+      }
+    },
+    "Slow": {
+      "Upgrades": {
+        "1": {
+          "Duration": "+2",
+          "Chance": "+30"
         }
       }
     },
@@ -130,6 +123,14 @@
       "Upgrades": {
         "1": {
           "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "1": {
+          "Reflection": "+50",
+          "Chance": "+10"
         }
       }
     }

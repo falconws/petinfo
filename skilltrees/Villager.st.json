@@ -1,0 +1,123 @@
+{
+  "ID": "Villager",
+  "Order": 18,
+  "Name": "【上位】村長",
+  "Icon": {
+    "Material": "\t slime"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "ハァン"
+  ],
+  "MobTypes": [
+    "Villager",
+    "ZombieVillager"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "90": {
+          "rows": "+5"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "95": {
+          "Range": "+1",
+          "Duration": "+20",
+          "Count": "+1",
+          "Buffs": {
+            "JumpBoost": "+1",
+            "Luck": false
+          }
+        },
+        "98": {
+          "Range": "+1",
+          "Duration": "+10",
+          "Buffs": {
+            "Luck": false
+          }
+        },
+        "100,90": {
+          "Range": "+3",
+          "Duration": "+20",
+          "Count": "+2",
+          "Buffs": {
+            "Luck": false,
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,90": {
+          "Damage": "+0.5"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+0.5",
+          "Timer": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "100": {
+          "Range": "+1"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "90": {
+          "Damage": "+1",
+          "Rate": "+30",
+          "Projectile": "Snowball"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "100": {
+          "Active": true,
+          "Speed": "+10",
+          "JumpHeight": "+1",
+          "CanFly": true
+        }
+      }
+    },
+    "Slow": {
+      "Upgrades": {
+        "90": {
+          "Duration": "+3",
+          "Chance": "+50"
+        }
+      }
+    }
+  }
+}

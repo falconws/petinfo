@@ -1,0 +1,113 @@
+{
+  "ID": "Ocelot2",
+  "Order": 1,
+  "Name": "【特殊上位】ジャングルのハンター",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 100,
+  "MaxLevel": 120,
+  "Description": [
+    "ジャングルで生きるヤマネコ",
+    "・騎乗不可",
+    "・バックパックなし"
+  ],
+  "MobTypes": [
+    "Ocelot"
+  ],
+  "Skills": {
+    "Beacon": {
+      "Upgrades": {
+        "120": {
+          "Count": "+1",
+          "Buffs": {
+            "Strength": "+1"
+          }
+        },
+        "100,110,120,80,90": {
+          "Range": "+3",
+          "Duration": "+10"
+        },
+        "1,100": {
+          "Range": "+5",
+          "Duration": "+30",
+          "Count": "+1",
+          "Buffs": {
+            "JumpBoost": "+1",
+            "NightVision": true,
+            "Speed": "+2",
+            "Strength": "+1",
+            "Invisibility": true
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%10>80<120": {
+          "Damage": "+5"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "80": {
+          "Health": "+2"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,110,120,80,90": {
+          "Health": "+30"
+        }
+      }
+    },
+    "Poison": {
+      "Upgrades": {
+        "120": {
+          "Duration": "+10",
+          "Chance": "+25"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "120": {
+          "Damage": "+10",
+          "Chance": "+30"
+        }
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "80": {
+          "Duration": "+5",
+          "Chance": "+20"
+        },
+        "120": {
+          "Duration": "+1",
+          "Chance": "+5"
+        }
+      }
+    }
+  }
+}

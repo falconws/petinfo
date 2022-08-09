@@ -1,0 +1,132 @@
+{
+  "ID": "Zombie",
+  "Order": 33,
+  "Name": "【上位】陸の英雄（腐）",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "※30マスまでの飛行制限"
+  ],
+  "MobTypes": [
+    "Drowned",
+    "Zombie",
+    "ZombieVillager"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100": {
+          "rows": "+2"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "10": {
+          "Buffs": {
+            "Absorption": "+1",
+            "FireResistance": true,
+            "Luck": false,
+            "Resistance": "+1",
+            "Strength": "+1",
+            "WaterBreathing": true
+          }
+        },
+        "50": {
+          "Buffs": {
+            "Luck": false,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+1"
+          }
+        },
+        "100": {
+          "Buffs": {
+            "Absorption": "+1",
+            "Luck": false,
+            "Resistance": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        },
+        "10,100,50,90": {
+          "Range": "+1",
+          "Duration": "+3",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "3": {
+          "Active": true
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+5"
+        },
+        "10,100,20,30,40,50,60,70,80,90": {
+          "Damage": "+0.5"
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "100": {
+          "Duration": "+50",
+          "Chance": "+50"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+1",
+          "Timer": "+1"
+        },
+        "95,98": {
+          "Health": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<100": {
+          "Health": "+1"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+10",
+          "JumpHeight": "+1",
+          "FlyLimit": "+30",
+          "FlyRegenRate": "+10",
+          "CanFly": true
+        }
+      }
+    }
+  }
+}

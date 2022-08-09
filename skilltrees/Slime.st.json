@@ -1,0 +1,146 @@
+{
+  "ID": "Slime",
+  "Order": 30,
+  "Name": "【上位】ぷよぷよ",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "※30マスまでの飛行制限",
+    "※確率（大）でダメージを引き受ける",
+    ""
+  ],
+  "MobTypes": [
+    "Slime"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100": {
+          "rows": "+5"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Range": "+9",
+          "Duration": "+30",
+          "Count": "+3",
+          "Buffs": {
+            "Luck": false
+          }
+        },
+        "100": {
+          "Count": "+1",
+          "Buffs": {
+            "Absorption": "+3",
+            "Luck": false,
+            "Resistance": "+3",
+            "Speed": "+2",
+            "Regeneration": "+3"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "3": {
+          "Active": true
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "90": {
+          "Damage": "+2"
+        },
+        "100": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "90": {
+          "Health": "+5",
+          "Timer": "+1"
+        },
+        "100": {
+          "Health": "+2"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<100": {
+          "Health": "+2"
+        }
+      }
+    },
+    "Poison": {
+      "Upgrades": {
+        "100": {
+          "Duration": "+30",
+          "Chance": "+90"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+10",
+          "JumpHeight": "+2",
+          "FlyLimit": "+30",
+          "FlyRegenRate": "+40",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "100": {
+          "Redirect": "-50",
+          "Chance": "+90"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "4": {
+          "Active": true
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+2",
+          "Chance": "+30"
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "100": {
+          "Reflection": "+50",
+          "Chance": "+50"
+        }
+      }
+    }
+  }
+}

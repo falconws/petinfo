@@ -1,0 +1,122 @@
+{
+  "ID": "Warden",
+  "Order": -1,
+  "Name": "古代都市の番人",
+  "Icon": {
+    "Material": "iron_block"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "古代都市を守る番人",
+    "・飛行制限あり",
+    "・バックパックなし"
+  ],
+  "MobTypes": [
+    "Warden"
+  ],
+  "Skills": {
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Buffs": {
+            "Absorption": "+1",
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        },
+        "95": {
+          "Buffs": {
+            "Resistance": "+1"
+          }
+        },
+        "100,90,95": {
+          "Range": "+3",
+          "Duration": "+15",
+          "Count": "+1",
+          "Buffs": {
+            "Strength": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "90": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "90": {
+          "Damage": "+15"
+        },
+        "100": {
+          "Damage": "+15"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "90": {
+          "Health": "+0.5",
+          "Timer": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,90": {
+          "Health": "+240"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "90": {
+          "Chance": "+50"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "100": {
+          "Speed": "-10",
+          "FlyLimit": "+30",
+          "FlyRegenRate": "+10"
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "95": {
+          "Redirect": "+10",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "95": {
+          "Damage": "+20",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "100": {
+          "Reflection": "+20",
+          "Chance": "+50"
+        }
+      }
+    }
+  }
+}

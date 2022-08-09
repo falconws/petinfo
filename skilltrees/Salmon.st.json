@@ -1,38 +1,47 @@
 {
-  "ID": "Cow",
-  "Order": 21,
-  "Name": "【上位】牛乳無料",
+  "ID": "Salmon",
+  "Order": 13,
+  "Name": "【上位】旬のお魚",
   "Icon": {
     "Material": "nether_star"
   },
   "RequiredLevel": 90,
   "MaxLevel": 100,
   "Description": [
-    "※90％の確率でプレイヤーのダメージを引き受ける",
-    "ただし受けるダメージは2倍"
+    "鮮度が命"
   ],
   "MobTypes": [
-    "Cow"
+    "Salmon"
   ],
   "Skills": {
-    "Beacon": {
+    "Backpack": {
       "Upgrades": {
         "100": {
+          "rows": "+1"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "100,90": {
+          "Count": "+1",
           "Buffs": {
+            "JumpBoost": "+1",
             "Luck": false,
             "NightVision": true,
-            "Resistance": "+1"
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+1",
+            "WaterBreathing": true,
+            "Regeneration": "+1"
           }
         },
-        "100,90": {
-          "Range": "+5",
+        "100,90,95": {
+          "Range": "+8",
           "Duration": "+30",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
-            "Resistance": "+1",
-            "Strength": "+1",
-            "Regeneration": "+1"
+            "Luck": false
           }
         }
       }
@@ -50,8 +59,8 @@
     },
     "Damage": {
       "Upgrades": {
-        "100,90": {
-          "Damage": "+3"
+        "100,90,95": {
+          "Damage": "+1.5"
         }
       }
     },
@@ -59,22 +68,31 @@
       "Upgrades": {
         "100": {
           "Health": "+2",
-          "Timer": "+5"
+          "Timer": "+1"
         }
       }
     },
     "Life": {
       "Upgrades": {
-        "50,99": {
-          "Health": "+25"
+        "90": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Lightning": {
+      "Upgrades": {
+        "1": {
+          "Damage": "+20",
+          "Chance": "+80"
         }
       }
     },
     "Ride": {
       "Upgrades": {
-        "1": {
+        "100": {
           "Active": true,
-          "Speed": "+15",
+          "Speed": "+10",
+          "JumpHeight": "+1.25",
           "CanFly": true
         }
       }
@@ -82,16 +100,23 @@
     "Shield": {
       "Upgrades": {
         "100": {
-          "Redirect": "+10",
-          "Chance": "+90"
+          "Redirect": "+50",
+          "Chance": "+5"
         }
       }
     },
-    "Stomp": {
+    "Sprint": {
+      "Upgrades": {
+        "8": {
+          "Active": true
+        }
+      }
+    },
+    "Wither": {
       "Upgrades": {
         "100": {
-          "Damage": "+2",
-          "Chance": "+50"
+          "Duration": "+5",
+          "Chance": "+5"
         }
       }
     }

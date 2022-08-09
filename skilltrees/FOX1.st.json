@@ -1,0 +1,114 @@
+{
+  "ID": "FOX1",
+  "Order": 41,
+  "Name": "【上位】キツネの嫁入り：朱",
+  "Icon": {
+    "Material": "sweet_berries"
+  },
+  "RequiredLevel": 80,
+  "MaxLevel": 100,
+  "Description": [
+    "アタックモード"
+  ],
+  "MobTypes": [
+    "Fox"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100": {
+          "rows": "+1"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "100,95": {
+          "Range": "+2",
+          "Duration": "+20",
+          "Count": "+2",
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+2"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,90,95": {
+          "Damage": "+8"
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "100": {
+          "Duration": "+30",
+          "Chance": "+100"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+60"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "1": {
+          "Range": "+1"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {}
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {}
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "80": {
+          "Duration": "+3",
+          "Chance": "+5"
+        }
+      }
+    }
+  }
+}

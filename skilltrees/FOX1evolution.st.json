@@ -1,0 +1,154 @@
+{
+  "ID": "FOX1evolution",
+  "Order": 42,
+  "Name": "【特殊上位】金狐",
+  "Icon": {
+    "Material": "sweet_berries",
+    "Glowing": true
+  },
+  "RequiredLevel": 100,
+  "MaxLevel": 120,
+  "Description": [
+    "アタックモード",
+    "※【特殊上位】以外に変更した場合",
+    "レベルが低下する場合があります"
+  ],
+  "MobTypes": [
+    "Fox"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100": {
+          "rows": "+1"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "110": {
+          "Buffs": {
+            "Luck": false,
+            "Regeneration": "+1"
+          }
+        },
+        "100,95": {
+          "Range": "+2",
+          "Duration": "+20",
+          "Count": "+2",
+          "Buffs": {
+            "Absorption": "+1",
+            "FireResistance": true,
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+2"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,90,95": {
+          "Damage": "+8"
+        },
+        "110,120": {
+          "Damage": "+2"
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "100,80,90": {
+          "Duration": "+5",
+          "Chance": "+20"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+5"
+        },
+        "110,120": {
+          "Health": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+60"
+        },
+        "110,120": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Lightning": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+100",
+          "Chance": "+1"
+        },
+        "120": {
+          "Chance": "+4"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "1": {
+          "Range": "+2"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+20",
+          "JumpHeight": "+1",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "1": {
+          "Redirect": "+80",
+          "Chance": "+20"
+        },
+        "120": {
+          "Redirect": "+10",
+          "Chance": "+5"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {}
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "80": {
+          "Duration": "+3",
+          "Chance": "+10"
+        }
+      }
+    }
+  }
+}

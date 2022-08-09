@@ -1,0 +1,144 @@
+{
+  "ID": "Witherevolution",
+  "Order": 27,
+  "Name": "【特殊上位】破壊者",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 100,
+  "MaxLevel": 120,
+  "Description": [
+    "破壊の力をここに",
+    "○　攻撃",
+    "※10％の確率でプレイヤーの受けるダメージ無効化"
+  ],
+  "MobTypes": [
+    "Wither"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100": {
+          "rows": "+2"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Range": "+5",
+          "Duration": "+10",
+          "Count": "+1",
+          "Buffs": {
+            "Absorption": "+1",
+            "Luck": false,
+            "Speed": "+1",
+            "Strength": "+2",
+            "Regeneration": "+1"
+          }
+        },
+        "100": {
+          "Range": "+2",
+          "Duration": "+30",
+          "Count": "+4",
+          "Buffs": {
+            "Absorption": "+1",
+            "FireResistance": true,
+            "Luck": false,
+            "Resistance": "+2",
+            "Strength": "+2",
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,90": {
+          "Damage": "+15"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+3",
+          "Timer": "+2"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+90"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "2": {
+          "Damage": "+2",
+          "Rate": "+15",
+          "Projectile": "WitherSkull"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+20",
+          "JumpHeight": "+2.5"
+        },
+        "10": {
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "1": {
+          "Chance": "+20"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "8": {
+          "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "1": {
+          "Reflection": "+100",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "90": {
+          "Duration": "+3",
+          "Chance": "+20"
+        },
+        "100": {
+          "Duration": "+2",
+          "Chance": "+30"
+        }
+      }
+    }
+  }
+}

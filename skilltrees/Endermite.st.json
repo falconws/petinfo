@@ -1,45 +1,50 @@
 {
-  "ID": "Cow",
-  "Order": 21,
-  "Name": "【上位】牛乳無料",
+  "ID": "Endermite",
+  "Order": 10,
+  "Name": "【上位】狭間の蟲",
   "Icon": {
     "Material": "nether_star"
   },
   "RequiredLevel": 90,
   "MaxLevel": 100,
   "Description": [
-    "※90％の確率でプレイヤーのダメージを引き受ける",
-    "ただし受けるダメージは2倍"
+    "ムシムシしたムシ（無視"
   ],
   "MobTypes": [
-    "Cow"
+    "Endermite"
   ],
   "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100,90": {
+          "rows": "+5"
+        }
+      }
+    },
     "Beacon": {
       "Upgrades": {
         "100": {
           "Buffs": {
             "Luck": false,
             "NightVision": true,
-            "Resistance": "+1"
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Regeneration": "+2"
           }
         },
-        "100,90": {
-          "Range": "+5",
-          "Duration": "+30",
+        "100,90,95": {
+          "Range": "+3",
+          "Duration": "+15",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
-            "Resistance": "+1",
-            "Strength": "+1",
-            "Regeneration": "+1"
+            "Luck": false
           }
         }
       }
     },
     "Behavior": {
       "Upgrades": {
-        "2": {
+        "1": {
           "Aggro": false,
           "Duel": true,
           "Farm": true,
@@ -51,22 +56,29 @@
     "Damage": {
       "Upgrades": {
         "100,90": {
-          "Damage": "+3"
+          "Damage": "+1"
         }
       }
     },
     "Heal": {
       "Upgrades": {
-        "100": {
+        "99": {
           "Health": "+2",
-          "Timer": "+5"
+          "Timer": "+3"
         }
       }
     },
     "Life": {
       "Upgrades": {
         "50,99": {
-          "Health": "+25"
+          "Health": "+5"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "100": {
+          "Range": "+5"
         }
       }
     },
@@ -74,24 +86,7 @@
       "Upgrades": {
         "1": {
           "Active": true,
-          "Speed": "+15",
           "CanFly": true
-        }
-      }
-    },
-    "Shield": {
-      "Upgrades": {
-        "100": {
-          "Redirect": "+10",
-          "Chance": "+90"
-        }
-      }
-    },
-    "Stomp": {
-      "Upgrades": {
-        "100": {
-          "Damage": "+2",
-          "Chance": "+50"
         }
       }
     }

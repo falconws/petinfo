@@ -1,0 +1,116 @@
+{
+  "ID": "Turtle",
+  "Order": 22,
+  "Name": "【上位】鶴は千年、亀は・・・",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "※確率（極大）でダメージを引き受ける",
+    "※騎乗時のスピード低減（大）"
+  ],
+  "MobTypes": [
+    "Turtle"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "90": {
+          "rows": "+5"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "100": {
+          "Range": "+32",
+          "Duration": "+120",
+          "Count": "+5",
+          "Buffs": {
+            "Absorption": "+2",
+            "FireResistance": true,
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+3",
+            "WaterBreathing": true,
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "90": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+5",
+          "Timer": "+3"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+100"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "100,90": {
+          "Range": "+1"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "-30",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "90": {
+          "Chance": "+100"
+        }
+      }
+    },
+    "Slow": {
+      "Upgrades": {
+        "1": {
+          "Duration": "+2",
+          "Chance": "+100"
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "100": {
+          "Reflection": "+10",
+          "Chance": "+100"
+        }
+      }
+    }
+  }
+}

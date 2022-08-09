@@ -1,0 +1,146 @@
+{
+  "ID": "Illusioner",
+  "Order": 24,
+  "Name": "【上位】幻想者",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "ふえるおっさん",
+    "○　攻撃",
+    "※騎乗不能",
+    "※20％の確率でプレイヤーのダメージを引き受ける",
+    ""
+  ],
+  "MobTypes": [
+    "Illusioner"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "90": {
+          "rows": "+2"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Range": "+1",
+          "Count": "+2",
+          "Buffs": {
+            "Absorption": "+2",
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+1"
+          }
+        },
+        "100": {
+          "Range": "+2",
+          "Count": "+1",
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+2",
+            "Invisibility": true,
+            "Regeneration": "+1"
+          }
+        },
+        "100,90": {
+          "Range": "+5",
+          "Duration": "+8",
+          "Count": "+2",
+          "Buffs": {
+            "Luck": false
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+15"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "90": {
+          "Health": "+2"
+        },
+        "100": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+70"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "2": {
+          "Chance": "+50"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "100": {
+          "Range": "+5"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "2": {
+          "Damage": "+12",
+          "Rate": "+10",
+          "Projectile": "Arrow"
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "2": {
+          "Chance": "+20"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "8": {
+          "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "1": {
+          "Reflection": "+100",
+          "Chance": "+20"
+        }
+      }
+    }
+  }
+}

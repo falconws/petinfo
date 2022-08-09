@@ -1,0 +1,165 @@
+{
+  "ID": "FOX2evolution",
+  "Order": 44,
+  "Name": "【特殊上位】銀狐",
+  "Icon": {
+    "Material": "sweet_berries",
+    "Glowing": true
+  },
+  "RequiredLevel": 100,
+  "MaxLevel": 120,
+  "Description": [
+    "サポートモード",
+    "※【特殊上位】以外に変更した場合",
+    "レベルが低下する場合があります"
+  ],
+  "MobTypes": [
+    "Fox"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100,80,90": {
+          "rows": "+2"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "120": {
+          "Count": "+2",
+          "Buffs": {
+            "Luck": false,
+            "NightVision": true,
+            "Speed": "+1",
+            "Invisibility": true
+          }
+        },
+        "100,80": {
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "Resistance": "+2",
+            "Speed": "+1",
+            "Strength": "+1",
+            "WaterBreathing": true,
+            "Regeneration": "+1"
+          }
+        },
+        "100,120,90,95": {
+          "Range": "+5",
+          "Duration": "+15",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,80": {
+          "Damage": "+5"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+5"
+        },
+        "110,120": {
+          "Health": "+2"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+10"
+        },
+        "110,120": {
+          "Health": "+35"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "100": {
+          "Chance": "+100"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "80": {
+          "Range": "+8"
+        },
+        "100": {
+          "Range": "+2"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+1",
+          "Rate": "+40",
+          "Projectile": "EnderPearl"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+40",
+          "JumpHeight": "+2",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "1": {
+          "Redirect": "+50",
+          "Chance": "+60"
+        }
+      }
+    },
+    "Slow": {
+      "Upgrades": {
+        "1": {
+          "Duration": "+2",
+          "Chance": "+30"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "1": {
+          "Reflection": "+40",
+          "Chance": "+20"
+        }
+      }
+    }
+  }
+}

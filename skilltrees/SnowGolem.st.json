@@ -1,57 +1,58 @@
 {
-  "ID": "chicken",
-  "Order": 28,
-  "Name": "【上位】ニワトリの王",
-  "Requirements": [
-    "Permission"
-  ],
+  "ID": "SnowGolem",
+  "Order": 16,
+  "Name": "【上位】従順な付き人",
   "Icon": {
     "Material": "nether_star"
   },
   "RequiredLevel": 90,
   "MaxLevel": 100,
   "Description": [
-    "※1％の確率でプレイヤーのダメージを引き受ける"
+    "私はあなたについていきます。"
   ],
   "MobTypes": [
-    "Chicken"
+    "Snowman"
   ],
   "Skills": {
     "Backpack": {
       "Upgrades": {
-        "80": {
-          "rows": "+5"
+        "100,90,95": {
+          "rows": "+1"
         }
       }
     },
     "Beacon": {
       "Upgrades": {
         "90": {
-          "Range": "+5",
-          "Duration": "+20",
-          "Count": "+1",
+          "Duration": "+10",
           "Buffs": {
-            "Absorption": "+1",
-            "JumpBoost": "+2",
             "Luck": false,
-            "Speed": "+2",
-            "WaterBreathing": true
+            "NightVision": true,
+            "Resistance": "+1"
           }
         },
         "95": {
           "Count": "+1",
           "Buffs": {
+            "Absorption": "+1",
+            "FireResistance": true,
+            "Luck": false
+          }
+        },
+        "100": {
+          "Count": "+1",
+          "Buffs": {
+            "JumpBoost": "+2",
             "Luck": false,
             "Resistance": "+2",
             "Regeneration": "+1"
           }
         },
-        "100": {
+        "100,90": {
           "Range": "+5",
           "Duration": "+10",
           "Count": "+1",
           "Buffs": {
-            "FireResistance": false,
             "Luck": false
           }
         }
@@ -70,67 +71,68 @@
     },
     "Damage": {
       "Upgrades": {
-        "10,100,20,30,40,50,60,70,80,90": {
-          "Damage": "+0.5"
+        "90": {
+          "Damage": "-1"
         }
       }
     },
     "Heal": {
       "Upgrades": {
         "100": {
-          "Health": "+1"
-        },
-        "10,20,50,90": {
-          "Health": "+0.5",
-          "Timer": "+1"
+          "Health": "+1",
+          "Timer": "+10"
         }
       }
     },
     "Life": {
       "Upgrades": {
-        "%1>1<100": {
-          "Health": "+0.5"
+        "50,99": {
+          "Health": "+240"
         }
       }
     },
-    "Pickup": {
+    "Ranged": {
       "Upgrades": {
-        "1": {
-          "Range": "+5"
-        }
-      }
-    },
-    "Poison": {
-      "Upgrades": {
-        "10": {
-          "Duration": "+10",
-          "Chance": "+10"
+        "90": {
+          "Rate": "+20",
+          "Projectile": "Snowball"
         }
       }
     },
     "Ride": {
       "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+5",
+          "JumpHeight": "+1.25"
+        },
         "100": {
           "Active": true,
-          "Speed": "+40",
-          "JumpHeight": "+2",
+          "Speed": "+5",
+          "JumpHeight": "+1",
           "CanFly": true
         }
       }
     },
     "Shield": {
       "Upgrades": {
-        "100": {
+        "90": {
           "Redirect": "+100",
-          "Chance": "+1"
+          "Chance": "+100"
+        }
+      }
+    },
+    "Slow": {
+      "Upgrades": {
+        "90": {
+          "Duration": "+5",
+          "Chance": "+50"
         }
       }
     },
     "Sprint": {
       "Upgrades": {
-        "1": {
-          "Active": true
-        }
+        "8": {}
       }
     }
   }

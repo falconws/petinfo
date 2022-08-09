@@ -1,0 +1,93 @@
+{
+  "ID": "Ocelot3",
+  "Order": 2,
+  "Name": "【特殊上位】ジャングルのガーディアン",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 100,
+  "MaxLevel": 120,
+  "Description": [
+    "ジャングルで生きるヤマネコ",
+    "・騎乗不可",
+    "・バックパックなし"
+  ],
+  "MobTypes": [
+    "Ocelot"
+  ],
+  "Skills": {
+    "Beacon": {
+      "Upgrades": {
+        "120": {
+          "Count": "+3",
+          "Buffs": {
+            "Absorption": "+1",
+            "Resistance": "+1",
+            "Strength": "+1"
+          }
+        },
+        "100,110,120,80,90": {
+          "Range": "+5",
+          "Duration": "+10"
+        },
+        "100,110": {
+          "Range": "+5",
+          "Duration": "+30",
+          "Count": "+1",
+          "Buffs": {
+            "JumpBoost": "+1",
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+2",
+            "Invisibility": true
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%10>80<120": {
+          "Damage": "+2"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "80": {
+          "Health": "+2"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,110,120,80,90": {
+          "Health": "+30"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {}
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "120": {
+          "Duration": "+10",
+          "Chance": "+5"
+        }
+      }
+    }
+  }
+}

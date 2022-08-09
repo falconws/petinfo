@@ -1,0 +1,134 @@
+{
+  "ID": "ZombieHorse",
+  "Order": 36,
+  "Name": "【上位】神馬（腐）",
+  "Icon": {
+    "Material": "carrot_on_a_stick"
+  },
+  "RequiredLevel": 80,
+  "MaxLevel": 100,
+  "Description": [
+    "T(Toraden)ウイルスに冒された神馬",
+    "○　スピード",
+    "神馬よりビーコン能力が強化されているが",
+    "騎乗時の速度が低下している。"
+  ],
+  "MobTypes": [
+    "SkeletonHorse",
+    "ZombieHorse"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "80": {
+          "rows": "+3"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "80": {
+          "Duration": "+30",
+          "Buffs": {
+            "JumpBoost": "+2",
+            "NightVision": true
+          }
+        },
+        "90": {
+          "Buffs": {
+            "Absorption": "+1",
+            "Speed": "+1"
+          }
+        },
+        "100": {
+          "Buffs": {
+            "NightVision": true,
+            "Resistance": "+2",
+            "Strength": "+2"
+          }
+        },
+        "100,80,90": {
+          "Range": "+5",
+          "Duration": "+10",
+          "Count": "+2"
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+5"
+        },
+        "80,90": {
+          "Damage": "+2"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+3",
+          "Timer": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "%1>1<100": {
+          "Health": "+1"
+        }
+      }
+    },
+    "Poison": {
+      "Upgrades": {
+        "1": {
+          "Duration": "+10",
+          "Chance": "+15"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+100",
+          "JumpHeight": "+3"
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "80": {
+          "Redirect": "+100",
+          "Chance": "+20"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "80": {
+          "Active": true
+        }
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "90": {
+          "Duration": "+5",
+          "Chance": "+10"
+        }
+      }
+    }
+  }
+}

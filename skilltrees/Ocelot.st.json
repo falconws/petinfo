@@ -1,0 +1,79 @@
+{
+  "ID": "Ocelot",
+  "Order": 0,
+  "Name": "【上位】まだ、ただのヤマネコ",
+  "Icon": {
+    "Material": "iron_block"
+  },
+  "RequiredLevel": 80,
+  "MaxLevel": 100,
+  "Description": [
+    "わがままな野生のネコ",
+    "・荷物はお前が持て",
+    "・乗ることは許さない！"
+  ],
+  "MobTypes": [
+    "Ocelot"
+  ],
+  "Skills": {
+    "Beacon": {
+      "Upgrades": {
+        "1": {
+          "Range": "+3",
+          "Duration": "+20",
+          "Count": "+1",
+          "Buffs": {
+            "JumpBoost": "+1",
+            "Speed": "+1"
+          }
+        },
+        "20,40,80": {
+          "Range": "+3",
+          "Duration": "+5",
+          "Count": "+1",
+          "Buffs": {
+            "NightVision": true
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "1,15,20,30,40,50": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "1,30": {
+          "Health": "+2",
+          "Timer": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "10,25,40": {
+          "Health": "+10"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "1": {}
+      }
+    }
+  }
+}

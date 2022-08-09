@@ -1,0 +1,118 @@
+{
+  "ID": "Panda",
+  "Order": 47,
+  "Name": "【上位】万能パンダ",
+  "Icon": {
+    "Material": "Bamboo"
+  },
+  "RequiredLevel": 80,
+  "MaxLevel": 100,
+  "Description": [
+    "飛行可能"
+  ],
+  "MobTypes": [
+    "Panda"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100,80,90": {
+          "rows": "+1"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "NightVision": true,
+            "WaterBreathing": true
+          }
+        },
+        "100": {
+          "Buffs": {
+            "JumpBoost": "+1",
+            "Luck": false,
+            "Resistance": "+2",
+            "Speed": "+1",
+            "Strength": "+2",
+            "Regeneration": "+1"
+          }
+        },
+        "100,80,90": {
+          "Range": "+5",
+          "Duration": "+10",
+          "Count": "+2",
+          "Buffs": {
+            "Luck": false
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,80,90": {
+          "Damage": "+8"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+2"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,80,90,95": {
+          "Health": "+50"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "100,80,90": {
+          "Chance": "+10"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "80": {
+          "Range": "+5"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "80": {
+          "Active": true,
+          "Speed": "+10",
+          "CanFly": true
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "80": {
+          "Damage": "+2",
+          "Chance": "+20"
+        }
+      }
+    }
+  }
+}

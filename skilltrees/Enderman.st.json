@@ -1,0 +1,143 @@
+{
+  "ID": "Enderman",
+  "Order": 12,
+  "Name": "【上位】エンドの住人",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "テレポート能力は失われてしまったが",
+    "水には強くなりました(by エンダー"
+  ],
+  "MobTypes": [
+    "Enderman"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "90": {
+          "rows": "+6"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Buffs": {
+            "JumpBoost": "+1",
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        },
+        "100": {
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+2"
+          }
+        },
+        "100,90": {
+          "Range": "+5",
+          "Duration": "+15",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "6": {
+          "Active": true
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,90": {
+          "Damage": "+7"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+2",
+          "Timer": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+80"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "90": {
+          "Chance": "+100"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "100": {
+          "Range": "+1"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "90": {
+          "Speed": "+10",
+          "JumpHeight": "+1.25"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "8": {
+          "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "100": {
+          "Reflection": "+50",
+          "Chance": "+20"
+        }
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "100": {
+          "Duration": "+3",
+          "Chance": "+100"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "ID": "ravager",
+  "Order": 45,
+  "Name": "【上位】なまえはまだない！",
+  "RequiredLevel": 50,
+  "MaxLevel": 100,
+  "Description": [
+    "※20マスまでの飛行制限",
+    "※マイクラの仕様により",
+    "　現在騎乗不能"
+  ],
+  "MobTypes": [
+    "Ravager"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100": {
+          "rows": "+6"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "100": {
+          "Range": "+32",
+          "Duration": "+16",
+          "Count": "+2",
+          "Buffs": {
+            "Luck": false,
+            "Resistance": "+1",
+            "Regeneration": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": true
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "%3>1<200": {
+          "Damage": "+1"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "%10>1<200": {
+          "Health": "+0.5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "200": {
+          "Health": "+30"
+        },
+        "%1>1<200": {
+          "Health": "+1"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "1": {
+          "Chance": "+80"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "100": {
+          "Range": "+5"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+5",
+          "FlyLimit": "+10",
+          "FlyRegenRate": "+30",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "1,100,200": {
+          "Redirect": "+100",
+          "Chance": "+5"
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "1,100,150,200": {
+          "Damage": "+2",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "200": {
+          "Reflection": "+50",
+          "Chance": "+10"
+        }
+      }
+    }
+  }
+}

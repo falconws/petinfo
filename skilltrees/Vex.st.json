@@ -1,0 +1,126 @@
+{
+  "ID": "Vex",
+  "Order": 14,
+  "Name": "【上位】痛みの伝道師",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "苦痛は伝播する"
+  ],
+  "MobTypes": [
+    "Vex"
+  ],
+  "Skills": {
+    "Beacon": {
+      "Upgrades": {
+        "100": {
+          "Range": "+10",
+          "Duration": "+18",
+          "Count": "+2",
+          "Buffs": {
+            "JumpBoost": "+1",
+            "Luck": false,
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+2",
+            "Strength": "+2",
+            "Invisibility": true
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,90,95": {
+          "Damage": "+5"
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "100": {
+          "Duration": "+5",
+          "Chance": "+25"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+2",
+          "Timer": "+1"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+110"
+        }
+      }
+    },
+    "Lightning": {
+      "Upgrades": {
+        "100": {
+          "Damage": "+20",
+          "Chance": "+5"
+        }
+      }
+    },
+    "Poison": {
+      "Upgrades": {
+        "100,90": {
+          "Duration": "+10",
+          "Chance": "+50"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+20",
+          "JumpHeight": "+1",
+          "CanFly": true
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "8": {
+          "Active": true
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "100": {
+          "Reflection": "+20",
+          "Chance": "+25"
+        }
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "100": {
+          "Duration": "+2",
+          "Chance": "+25"
+        }
+      }
+    }
+  }
+}

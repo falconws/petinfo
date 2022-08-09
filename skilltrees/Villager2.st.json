@@ -1,0 +1,90 @@
+{
+  "ID": "Villager2",
+  "Order": 17,
+  "Name": "【上位】坑夫",
+  "Icon": {
+    "Material": "nether_star"
+  },
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
+  "Description": [
+    "ハァン？",
+    "※騎乗不能"
+  ],
+  "MobTypes": [
+    "Villager"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "90": {
+          "rows": "+5"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "90": {
+          "Range": "+10",
+          "Duration": "+30",
+          "Count": "+3",
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "NightVision": true
+          }
+        },
+        "99": {
+          "Range": "+2",
+          "Duration": "+60",
+          "Count": "+1",
+          "Buffs": {
+            "FireResistance": true,
+            "Luck": false,
+            "Strength": "+1"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "100": {
+          "Health": "+1",
+          "Timer": "+5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "50,99": {
+          "Health": "+15"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "1": {
+          "Range": "+1"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "8": {
+          "Active": true
+        }
+      }
+    }
+  }
+}

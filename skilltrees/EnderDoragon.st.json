@@ -1,65 +1,65 @@
 {
-  "ID": "chicken",
-  "Order": 28,
-  "Name": "【上位】ニワトリの王",
-  "Requirements": [
-    "Permission"
-  ],
+  "ID": "EnderDoragon",
+  "Order": 5,
+  "Name": "【特殊上位】EnderDoragon",
   "Icon": {
     "Material": "nether_star"
   },
   "RequiredLevel": 90,
   "MaxLevel": 100,
   "Description": [
-    "※1％の確率でプレイヤーのダメージを引き受ける"
+    "サポート、防御特化",
+    "攻撃力最低値"
   ],
   "MobTypes": [
-    "Chicken"
+    "EnderDragon"
   ],
   "Skills": {
     "Backpack": {
       "Upgrades": {
-        "80": {
-          "rows": "+5"
+        "100": {
+          "rows": "+6"
         }
       }
     },
     "Beacon": {
       "Upgrades": {
         "90": {
-          "Range": "+5",
-          "Duration": "+20",
-          "Count": "+1",
+          "Range": "+4",
+          "Duration": "+15",
+          "Count": "+3",
           "Buffs": {
-            "Absorption": "+1",
-            "JumpBoost": "+2",
             "Luck": false,
-            "Speed": "+2",
-            "WaterBreathing": true
+            "Resistance": "+1",
+            "Speed": "+1"
           }
         },
         "95": {
           "Count": "+1",
           "Buffs": {
+            "Absorption": "+1",
             "Luck": false,
-            "Resistance": "+2",
-            "Regeneration": "+1"
+            "NightVision": true
           }
         },
         "100": {
-          "Range": "+5",
-          "Duration": "+10",
-          "Count": "+1",
+          "Range": "+16",
+          "Duration": "+15",
+          "Count": "+3",
           "Buffs": {
-            "FireResistance": false,
-            "Luck": false
+            "Absorption": "+2",
+            "JumpBoost": "+2",
+            "Luck": false,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Regeneration": "+1"
           }
         }
       }
     },
     "Behavior": {
       "Upgrades": {
-        "1": {
+        "10": {
           "Aggro": false,
           "Duel": true,
           "Farm": true,
@@ -70,41 +70,29 @@
     },
     "Damage": {
       "Upgrades": {
-        "10,100,20,30,40,50,60,70,80,90": {
+        "100,50": {
           "Damage": "+0.5"
         }
       }
     },
     "Heal": {
       "Upgrades": {
-        "100": {
-          "Health": "+1"
-        },
-        "10,20,50,90": {
-          "Health": "+0.5",
-          "Timer": "+1"
+        "100,50,60,70,80,90": {
+          "Health": "+3"
         }
       }
     },
     "Life": {
       "Upgrades": {
         "%1>1<100": {
-          "Health": "+0.5"
+          "Health": "+2"
         }
       }
     },
     "Pickup": {
       "Upgrades": {
-        "1": {
+        "100": {
           "Range": "+5"
-        }
-      }
-    },
-    "Poison": {
-      "Upgrades": {
-        "10": {
-          "Duration": "+10",
-          "Chance": "+10"
         }
       }
     },
@@ -112,8 +100,8 @@
       "Upgrades": {
         "100": {
           "Active": true,
-          "Speed": "+40",
-          "JumpHeight": "+2",
+          "Speed": "+30",
+          "JumpHeight": "+1",
           "CanFly": true
         }
       }
@@ -121,8 +109,8 @@
     "Shield": {
       "Upgrades": {
         "100": {
-          "Redirect": "+100",
-          "Chance": "+1"
+          "Redirect": "+80",
+          "Chance": "+30"
         }
       }
     },
@@ -130,6 +118,22 @@
       "Upgrades": {
         "1": {
           "Active": true
+        }
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "90": {
+          "Damage": "+1",
+          "Chance": "+100"
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "100": {
+          "Reflection": "+200",
+          "Chance": "+20"
         }
       }
     }

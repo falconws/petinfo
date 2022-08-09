@@ -1,22 +1,19 @@
 {
-  "ID": "Bee1",
-  "Order": 7,
-  "Name": "斥候",
+  "ID": "Skeleton",
+  "Order": 29,
+  "Name": "【上位】狩人",
   "Icon": {
-    "Material": "iron_block"
+    "Material": "nether_star"
   },
-  "RequiredLevel": 10,
-  "MaxLevel": 50,
+  "RequiredLevel": 90,
+  "MaxLevel": 100,
   "Description": [
-    "まだ成長途中のハチ",
-    "",
-    "△　攻撃（遠距離攻撃あり）",
-    "△　サポート",
-    "※50マスまでの飛行制限",
-    "※Lv50以上は成長なし"
+    "攻撃力+2の威力で弓を打つ（1shots/1sec）",
+    "※飛行不能"
   ],
   "MobTypes": [
-    "Bee"
+    "Skeleton",
+    "Stray"
   ],
   "Skills": {
     "Backpack": {
@@ -28,20 +25,24 @@
     },
     "Beacon": {
       "Upgrades": {
-        "1,30,50": {
-          "Range": "+6",
-          "Duration": "+16",
+        "90": {
+          "Range": "+3",
+          "Duration": "+30",
           "Count": "+1",
           "Buffs": {
-            "Luck": false
-          }
-        },
-        "1,20,40": {
-          "Buffs": {
-            "JumpBoost": "+1",
             "Luck": false,
             "NightVision": true,
             "Speed": "+1",
+            "Strength": "+1"
+          }
+        },
+        "100": {
+          "Range": "+3",
+          "Duration": "+8",
+          "Count": "+1",
+          "Buffs": {
+            "Luck": false,
+            "Speed": "+2",
             "Invisibility": true
           }
         }
@@ -60,38 +61,37 @@
     },
     "Damage": {
       "Upgrades": {
-        "1,15,20,30,40,50": {
-          "Damage": "+1"
+        "%10>1<100": {
+          "Damage": "+0.5"
         }
       }
     },
     "Heal": {
       "Upgrades": {
-        "1,30": {
-          "Health": "+2",
-          "Timer": "+1"
+        "100": {
+          "Health": "+0.5"
         }
       }
     },
     "Life": {
       "Upgrades": {
-        "10,25,40": {
+        "50,99": {
           "Health": "+10"
         }
       }
     },
-    "Pickup": {
+    "Knockback": {
       "Upgrades": {
-        "10": {
-          "Range": "+16"
+        "90": {
+          "Chance": "+99"
         }
       }
     },
     "Ranged": {
       "Upgrades": {
-        "10": {
+        "2": {
           "Damage": "+2",
-          "Rate": "+100",
+          "Rate": "+20",
           "Projectile": "Arrow"
         }
       }
@@ -101,10 +101,7 @@
         "1": {
           "Active": true,
           "Speed": "+5",
-          "JumpHeight": "+1",
-          "FlyLimit": "+50",
-          "FlyRegenRate": "+10",
-          "CanFly": true
+          "JumpHeight": "+1"
         }
       }
     }
