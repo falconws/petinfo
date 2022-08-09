@@ -2,7 +2,6 @@
 require(__DIR__ . DIRECTORY_SEPARATOR . '../vendor/autoload.php');
 
 use Dotenv\Dotenv;
-use Jenssegers\Blade\Blade;
 
 class PetInfo
 {
@@ -59,7 +58,7 @@ class PetInfo
         'Regeneration' => '再生能力'
     );
 
-    function __construct()
+    public function __construct()
     {
         $this->load_env();
         $this->skilltrees = [];
@@ -134,14 +133,4 @@ class PetInfo
         return $this->skills_for_view;
     }
 }
-
-function main()
-{
-    $petinfo = new PetInfo();
-    $blade = new Blade('templates', 'cache');
-    echo $blade->render('petinfo_view', ['data_list' => $petinfo->get_skills_for_view()]);
-}
-
-main();
-
 ?>
