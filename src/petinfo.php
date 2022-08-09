@@ -80,13 +80,12 @@ class PetInfo
             $for_view['Description'] = implode(' | ', $skilltree['Description']);
             $for_view['MaxLevel'] = $skilltree['MaxLevel'] ?? 'なし';
 
+            $for_view['CanFly'] = 'なし';
             if (array_key_exists('Ride', $skilltree['Skills'])) {
                 foreach ($skilltree['Skills']['Ride']['Upgrades'] as $level => $ability) {
                     // @TODO CanFly get more details
-                    $for_view['CanFly'] = 'あり';
+                    if ($ability['CanFly']) $for_view['CanFly'] = 'あり';
                 }
-            } else {
-                $for_view['CanFly'] = 'なし';
             }
 
             if (array_key_exists('Backpack', $skilltree['Skills'])) {
