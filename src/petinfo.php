@@ -84,7 +84,7 @@ class PetInfo
             if (array_key_exists('Ride', $skilltree['Skills'])) {
                 foreach ($skilltree['Skills']['Ride']['Upgrades'] as $level => $ability) {
                     // @TODO CanFly get more details
-                    if ($ability['CanFly']) $for_view['CanFly'] = 'あり';
+                    if (array_key_exists('CanFly', $ability) && $ability['CanFly']) $for_view['CanFly'] = 'あり';
                 }
             }
 
