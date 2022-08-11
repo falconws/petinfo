@@ -27,7 +27,8 @@
 			"extensions": [
 				"bmewburn.vscode-intelephense-client",
 				"mikestead.dotenv",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"xdebug.php-debug"
 			]
 		}
 	}
