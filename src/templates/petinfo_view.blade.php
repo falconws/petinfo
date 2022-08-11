@@ -43,26 +43,21 @@
             </tr>
             @if ($data['Beacon'] == 'あり')
             <tr>
+                <th class="style_th">要求レベル、発動数、持続時間</th>
                 <th class="style_th">効果</th>
                 <th class="style_th">効果レベル</th>
-                <th class="style_th">要求レベル</th>
             </tr>
-            @endif
-            @foreach ($data['Beacon_details'] as $beacon_detail)
-                @foreach ($beacon_detail as $buff => $level)
-                @php
-                    $buff = explode('_', $buff);
-                @endphp
+            @foreach ($data['Beacon_details'] as $level => $spec)
             <tr>
-                <td class="style_td" rowspan="{{ count($level) }}"><img src="../static/img/beacon/{{ $buff[0] }}.png" width="32" height="32"> {{ $buff[1] }}</td>
-                    @foreach ($level as $effect_level => $required_level)
-                <td class="style_td">{{ $effect_level }}<span style="color:gray">
-                </td>
-                <td class="style_td">{{ $required_level }}</td>
-                    @endforeach
-            </tr>
+                <td class="style_td" rowspan="{{ count($spec['Buffs']) }}">Lv: {{ $level }}<br>発動数: {{ $spec['Count'] }}<br>持続時間: {{ $spec['Duration'] }}秒</td>
+
+                @foreach ($spec['Buffs'] as $buff_name => $buff_value)
+                <td class="style_td" rowspan="1"><img src="../static/img/beacon/{{ $buff_name }}.png" width="32" height="32"> {{ $data_list['translate_beacon_buff'][$buff_name] }}</td>
+                <td class="style_td">{{ $buff_value }}</td>
                 @endforeach
+            </tr>
             @endforeach
+            @endif
         </tbody>
     </table>
     @endforeach

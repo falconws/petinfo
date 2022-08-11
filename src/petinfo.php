@@ -71,10 +71,11 @@ class PetInfo
         $this->make_skills_for_view();
     }
 
-    private function make_skills_for_view()
+    private function make_skills_for_view(): void
     {
         foreach ($this->skilltrees as $skilltree) {
             $for_view['Name'] = $skilltree['Name'];
+            print('debug Name: ' . $skilltree['Name'] . "\n");
             $for_view['MobTypes'] = $skilltree['MobTypes'][0];
             $for_view['MobTypesJp'] = $skilltree['MobTypes'][0] === '*' ? '全て' : $this->translate_mobname[$skilltree['MobTypes'][0]];
             $for_view['Description'] = implode(' | ', $skilltree['Description']);
@@ -94,41 +95,68 @@ class PetInfo
             } else {
                 $for_view['Backpack'] = 'なし';
             }
-
-            // Beacon
+            
             if (array_key_exists('Beacon', $skilltree['Skills'])) {
                 $for_view['Beacon'] = 'あり';
-                $for_view['Beacon_details'] = [];
-                foreach ($skilltree['Skills']['Beacon']['Upgrades'] as $required_level => $ability) {
-                    foreach ($ability['Buffs'] as $buff => $effect_level) {
-                        $effect_level = $effect_level === true ? '-' : $effect_level;
-                        if ($effect_level) {
-                            $for_view['Beacon_details'][] = [$buff . '_' . $this->translate_beacon_buff[$buff] => [$effect_level => $required_level]];
-                        }
-                    }
-                }
+                $beacontree['Beacon_details'] = $this->make_beacon_details($skilltree['Skills']['Beacon']['Upgrades']);
             } else {
                 $for_view['Beacon'] = 'なし';
-                $for_view['Beacon_details'] = [];
             }
 
-            $this->skills_for_view[] = $for_view;
+            $this->skills_for_view[] = array_merge($for_view, $beacontree);
         }
+        $this->skills_for_view['translate_beacon_buff'] = $this->translate_beacon_buff;
+        // var_dump($this->skills_for_view);
     }
 
-    private function load_env()
+    private function make_beacon_details(array $beacontree): array
+    {
+        foreach ($beacontree as $required_level => $ability) {
+            foreach (explode(',', $required_level) as $level) {
+                if (array_key_exists('Count', $ability)) $beacon_info['Count'] = intval($ability['Count']);
+                if (array_key_exists('Duration', $ability)) $beacon_info['Duration'] = intval($ability['Duration']);
+
+                // // Buffs processing
+                // if (!array_key_exists('Buffs', $ability)) continue;
+                // foreach ($ability['Buffs'] as $buff => $effect_level) {
+                //     if ($effect_level === false) {
+                //         // unset($beacon_info['Buffs'][$buff]);
+                //         continue;
+                //     }
+                //     if ($effect_level === true) {
+                //         $beacon_info['Buffs'][$buff] = '-';
+                //     } else {
+                //         // Valid number
+                //         $beacon_info['Buffs'][$buff] = intval($effect_level);
+                //     }
+                // }
+                $all_level_list[$level] = $beacon_info;
+            }
+        }
+
+        ksort($all_level_list);
+        var_dump($all_level_list);
+        print("----------------\n");
+        foreach ($all_level_list as $level) {
+
+        }
+
+        return $all_level_list;
+    }
+
+    private function load_env(): void
     {
         $dotenv = Dotenv::createImmutable(__DIR__ . DIRECTORY_SEPARATOR . '..');
         $dotenv->load();
         $this->publish_mob_list = array_map('trim', explode(',', $_ENV['PUBLISH_MOB_LIST']));
     }
 
-    public function get_skilltrees()
+    public function get_skilltrees(): array
     {
         return $this->skilltrees;
     }
 
-    public function get_skills_for_view()
+    public function get_skills_for_view(): array
     {
         return $this->skills_for_view;
     }

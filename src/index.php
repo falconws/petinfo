@@ -3,7 +3,7 @@ require_once('petinfo.php');
 
 use Jenssegers\Blade\Blade;
 
-function main()
+function main(): void
 {
     $petinfo = new PetInfo();
     $blade = new Blade('templates', 'cache');
