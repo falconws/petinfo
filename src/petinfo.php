@@ -75,7 +75,6 @@ class PetInfo
     {
         foreach ($this->skilltrees as $skilltree) {
             $for_view['Name'] = $skilltree['Name'];
-            print('debug Name: ' . $skilltree['Name'] . "\n");
             $for_view['MobTypes'] = $skilltree['MobTypes'][0];
             $for_view['MobTypesJp'] = $skilltree['MobTypes'][0] === '*' ? '全て' : $this->translate_mobname[$skilltree['MobTypes'][0]];
             $for_view['Description'] = implode(' | ', $skilltree['Description']);
@@ -106,15 +105,16 @@ class PetInfo
             $this->skills_for_view[] = array_merge($for_view, $beacontree);
         }
         $this->skills_for_view['translate_beacon_buff'] = $this->translate_beacon_buff;
-        // var_dump($this->skills_for_view);
     }
 
     private function make_beacon_details(array $beacontree): array
     {
         foreach ($beacontree as $required_level => $ability) {
             foreach (explode(',', $required_level) as $level) {
-                if (array_key_exists('Count', $ability)) $beacon_info['Count'] = intval($ability['Count']);
-                if (array_key_exists('Duration', $ability)) $beacon_info['Duration'] = intval($ability['Duration']);
+                // Remove false buffs
+                $ability['Buffs'] = array_diff($ability['Buffs'], [false]);
+
+                $all_level_list[$level] = $ability;
 
                 // // Buffs processing
                 // if (!array_key_exists('Buffs', $ability)) continue;
@@ -130,17 +130,10 @@ class PetInfo
                 //         $beacon_info['Buffs'][$buff] = intval($effect_level);
                 //     }
                 // }
-                $all_level_list[$level] = $beacon_info;
             }
         }
 
         ksort($all_level_list);
-        var_dump($all_level_list);
-        print("----------------\n");
-        foreach ($all_level_list as $level) {
-
-        }
-
         return $all_level_list;
     }
 
