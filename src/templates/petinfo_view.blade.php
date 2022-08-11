@@ -54,7 +54,7 @@
                     $buff = explode('_', $buff);
                 @endphp
             <tr>
-                <td class="style_td" rowspan="{{ count($level) }}"><img src="../static/img/beacon/{{ $buff[0] }}.png" width="32" height="32"> {{ $buff[1] }}</td>
+                <td class="style_td" rowspan="{{ count($level) }}"><img src="../static/img/beacon/{{ strtolower($buff[0]) }}.png" width="32" height="32"> {{ $buff[1] }}</td>
                     @foreach ($level as $effect_level => $required_level)
                 <td class="style_td">{{ $effect_level }}<span style="color:gray">
                 </td>
