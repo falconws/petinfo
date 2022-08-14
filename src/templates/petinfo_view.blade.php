@@ -43,20 +43,22 @@
             </tr>
             @if ($data['Beacon'] == 'あり')
             <tr>
-                <th class="style_th">要求レベル、増分発動数、増分持続時間</th>
+                <th class="style_th">要求レベル、発動数、持続時間</th>
                 <th class="style_th">効果</th>
-                <th class="style_th">増分効果レベル</th>
+                <th class="style_th">効果レベル</th>
             </tr>
-            @foreach ($data['Beacon_details'] as $level => $ability)
+                @foreach ($data['Beacon_details'] as $level => $ability)
+                    @if (array_key_exists('Buffs', $ability))
             <tr>
-                <td class="style_td" rowspan="{{ count($ability['Buffs']) }}">Lv: {{ $level }}<br>増分発動数: {{ $ability['Count'] }}<br>増分持続時間: {{ $ability['Duration'] }}秒</td>
+                <td class="style_td" rowspan="{{ count($ability['Buffs']) }}">Lv: {{ $level }}<br>発動数: {{ $ability['Count'] }}<br>持続時間: {{ $ability['Duration'] }}秒</td>
 
-                @foreach ($ability['Buffs'] as $buff_name => $buff_value)
-                <td class="style_td" rowspan="1"><img src="../static/img/beacon/{{ $buff_name }}.png" width="32" height="32"> {{ $data_list['translate_beacon_buff'][$buff_name] }}</td>
-                <td class="style_td">{{ $buff_value }}</td>
-                @endforeach
+                        @foreach ($ability['Buffs'] as $buff_name => $buff_value)
+                <td class="style_td" rowspan="1"><img src="../static/img/beacon/{{ strtolower($buff_name) }}.png" width="32" height="32"> {{ $translate_beacon_buff[$buff_name] }}</td>
+                <td class="style_td">{{ $buff_value === true ? '-' : $buff_value }}</td>
             </tr>
-            @endforeach
+                        @endforeach
+                    @endif
+                @endforeach
             @endif
         </tbody>
     </table>

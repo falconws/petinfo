@@ -97,14 +97,13 @@ class PetInfo
             
             if (array_key_exists('Beacon', $skilltree['Skills'])) {
                 $for_view['Beacon'] = 'あり';
-                $beacontree['Beacon_details'] = $this->make_beacon_details($skilltree['Skills']['Beacon']['Upgrades']);
+                $beacontree['Beacon_details'] = @$this->make_beacon_details($skilltree['Skills']['Beacon']['Upgrades']);
             } else {
                 $for_view['Beacon'] = 'なし';
             }
 
             $this->skills_for_view[] = array_merge($for_view, $beacontree);
         }
-        $this->skills_for_view['translate_beacon_buff'] = $this->translate_beacon_buff;
     }
 
     private function make_beacon_details(array $beacontree): array
@@ -115,29 +114,25 @@ class PetInfo
             $ability['Buffs'] = array_diff($ability['Buffs'], [false]);
             foreach (explode(',', $required_level) as $level) {
                 if (!array_key_exists($level, $all_level_list)) {
-                    $all_level_list[$level]['Count'] = intval($ability['Count']) ?? 0;
-                    $all_level_list[$level]['Duration'] = intval($ability['Duration']) ?? 0;
-                    // $all_level_list[$level]['Buffs'] = $ability['Buffs'];
+                    $all_level_list[$level]['Count'] = array_key_exists('Count', $ability) ? intval($ability['Count']) : 0;
+                    $all_level_list[$level]['Duration'] = array_key_exists('Duration', $ability) ? intval($ability['Duration']) : 0;
+                    foreach ($ability['Buffs'] as $buff_name => $buff_value) {
+                        $all_level_list[$level]['Buffs'][$buff_name] = is_bool($buff_value) ? $buff_value : intval($buff_value);
+                    }
                     continue;
                 }
                 // Same level
-                $all_level_list[$level]['Count'] += intval($ability['Count']) ?? 0;
-                $all_level_list[$level]['Duration'] += intval($ability['Duration']) ?? 0;
+                $all_level_list[$level]['Count'] += array_key_exists('Count', $ability) ? intval($ability['Count']) : 0;
+                $all_level_list[$level]['Duration'] += array_key_exists('Duration', $ability) ? intval($ability['Duration']) : 0;
 
-                // // Buffs processing
-                // if (!array_key_exists('Buffs', $ability)) continue;
-                // foreach ($ability['Buffs'] as $buff => $effect_level) {
-                //     if ($effect_level === false) {
-                //         // unset($beacon_info['Buffs'][$buff]);
-                //         continue;
-                //     }
-                //     if ($effect_level === true) {
-                //         $beacon_info['Buffs'][$buff] = '-';
-                //     } else {
-                //         // Valid number
-                //         $beacon_info['Buffs'][$buff] = intval($effect_level);
-                //     }
-                // }
+                foreach ($ability['Buffs'] as $buff_name => $buff_value) {
+                    if (is_bool($buff_value)) {
+                        $all_level_list[$level]['Buffs'][$buff_name] = $buff_value;  // always $buff_value is true
+                    } else {
+                        // Warning: Undefined array key. But this is intended.
+                        $all_level_list[$level]['Buffs'][$buff_name] += intval($buff_value);
+                    }
+                }
             }
         }
 
@@ -149,6 +144,18 @@ class PetInfo
             }
             $all_level_list[$level]['Count'] += $prev_ability['Count'];
             $all_level_list[$level]['Duration'] += $prev_ability['Duration'];
+
+            if (array_key_exists('Buffs', $prev_ability)) {
+                foreach ($prev_ability['Buffs'] as $buff_name => $buff_value) {
+                    if (is_bool($buff_value)) {
+                        $all_level_list[$level]['Buffs'][$buff_name] = $buff_value;  // always $buff_value is true
+                    } else {
+                        // Warning: Undefined array key. But this is intended.
+                        $all_level_list[$level]['Buffs'][$buff_name] += intval($buff_value);
+                    }
+                }
+            }
+
             $prev_ability = $all_level_list[$level];
         }
         return $all_level_list;
@@ -169,6 +176,11 @@ class PetInfo
     public function get_skills_for_view(): array
     {
         return $this->skills_for_view;
+    }
+
+    public function get_translate_beacon_buff(): array
+    {
+        return $this->translate_beacon_buff;
     }
 }
 ?>
