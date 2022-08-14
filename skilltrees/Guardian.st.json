@@ -1,0 +1,142 @@
+{
+  "ID": "Guardian",
+  "Order": 0,
+  "Name": "【上位】海底の兵士",
+  "Icon": {
+    "Material": "nether_star",
+    "Glowing": true
+  },
+  "RequiredLevel": 80,
+  "MaxLevel": 100,
+  "Description": [
+    "ただのしたっぱ",
+    "※30マスまでの飛行制限"
+  ],
+  "MobTypes": [
+    "Squid"
+  ],
+  "Skills": {
+    "Backpack": {
+      "Upgrades": {
+        "100,80": {
+          "rows": "+1"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "100,80": {
+          "Duration": "+12",
+          "Count": "+1",
+          "Buffs": {
+            "Absorption": "+1",
+            "Resistance": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
+          }
+        },
+        "100,80,90": {
+          "Range": "+10",
+          "Duration": "+18",
+          "Count": "+1",
+          "Buffs": {
+            "NightVision": true,
+            "Speed": "+1",
+            "WaterBreathing": true
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "2": {
+          "Aggro": false,
+          "Duel": true,
+          "Farm": true,
+          "Friend": true,
+          "Raid": false
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "6": {
+          "Active": true
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "80": {
+          "Health": "+10",
+          "Timer": "+20"
+        },
+        "100": {
+          "Health": "+10",
+          "Timer": "-5"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "100,80,90": {
+          "Health": "+20"
+        }
+      }
+    },
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "JumpHeight": "-1",
+          "FlyLimit": "+30",
+          "CanFly": true
+        }
+      }
+    },
+    "Shield": {
+      "Upgrades": {
+        "120": {
+          "Redirect": "+100",
+          "Chance": "+60"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "100": {}
+      }
+    },
+    "Stomp": {
+      "Upgrades": {
+        "120": {
+          "Damage": "+2",
+          "Chance": "+1"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "80": {
+          "Damage": "+5",
+          "Rate": "+40",
+          "Projectile": "Trident"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "80": {
+          "Chance": "+50"
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "100,80,90": {
+          "Damage": "+5"
+        }
+      }
+    }
+  }
+}
