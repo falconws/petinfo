@@ -10,9 +10,21 @@
 </head>
 
 <body>
+    <hr class="full_hr">
+    @foreach ($data_list as $data)
+    <div class="contents">
+        <a id="contents_1"></a>
+        <ul class="list2 list-indent1">
+            <li><a href="#{{ $data['Name'] }}">{{ $data['Name'] }}</a></li>
+        </ul>
+    </div>
+    @endforeach
+    <hr class="full_hr">
+
     @foreach ($data_list as $data)
     <h3 id="content_1_0">
         {{ $data['Name'] }}
+        <a class="anchor_super" id="{{ $data['Name'] }}" href="#{{ $data['Name'] }}" style="user-select:none;">†</a>
     </h3>
 
     <table class="style_table" cellspacing="1" border="0">
