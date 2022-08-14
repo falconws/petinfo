@@ -71,7 +71,7 @@ class PetInfo
         $this->make_skills_for_view();
     }
 
-    private function make_skills_for_view()
+    private function make_skills_for_view(): void
     {
         foreach ($this->skilltrees as $skilltree) {
             $for_view['Name'] = $skilltree['Name'];
@@ -94,43 +94,93 @@ class PetInfo
             } else {
                 $for_view['Backpack'] = 'なし';
             }
-
-            // Beacon
+            
             if (array_key_exists('Beacon', $skilltree['Skills'])) {
                 $for_view['Beacon'] = 'あり';
-                $for_view['Beacon_details'] = [];
-                foreach ($skilltree['Skills']['Beacon']['Upgrades'] as $required_level => $ability) {
-                    foreach ($ability['Buffs'] as $buff => $effect_level) {
-                        $effect_level = $effect_level === true ? '-' : $effect_level;
-                        if ($effect_level) {
-                            $for_view['Beacon_details'][] = [$buff . '_' . $this->translate_beacon_buff[$buff] => [$effect_level => $required_level]];
-                        }
-                    }
-                }
+                $beacontree['Beacon_details'] = @$this->make_beacon_details($skilltree['Skills']['Beacon']['Upgrades']);
             } else {
                 $for_view['Beacon'] = 'なし';
-                $for_view['Beacon_details'] = [];
             }
 
-            $this->skills_for_view[] = $for_view;
+            $this->skills_for_view[] = array_merge($for_view, $beacontree);
         }
     }
 
-    private function load_env()
+    private function make_beacon_details(array $beacontree): array
+    {
+        $all_level_list = [];
+        foreach ($beacontree as $required_level => $ability) {
+            // Remove false buffs
+            $ability['Buffs'] = array_diff($ability['Buffs'], [false]);
+            foreach (explode(',', $required_level) as $level) {
+                if (!array_key_exists($level, $all_level_list)) {
+                    $all_level_list[$level]['Count'] = array_key_exists('Count', $ability) ? intval($ability['Count']) : 0;
+                    $all_level_list[$level]['Duration'] = array_key_exists('Duration', $ability) ? intval($ability['Duration']) : 0;
+                    foreach ($ability['Buffs'] as $buff_name => $buff_value) {
+                        $all_level_list[$level]['Buffs'][$buff_name] = is_bool($buff_value) ? $buff_value : intval($buff_value);
+                    }
+                    continue;
+                }
+                // Same level
+                $all_level_list[$level]['Count'] += array_key_exists('Count', $ability) ? intval($ability['Count']) : 0;
+                $all_level_list[$level]['Duration'] += array_key_exists('Duration', $ability) ? intval($ability['Duration']) : 0;
+
+                foreach ($ability['Buffs'] as $buff_name => $buff_value) {
+                    if (is_bool($buff_value)) {
+                        $all_level_list[$level]['Buffs'][$buff_name] = $buff_value;  // always $buff_value is true
+                    } else {
+                        // Warning: Undefined array key. But this is intended.
+                        $all_level_list[$level]['Buffs'][$buff_name] += intval($buff_value);
+                    }
+                }
+            }
+        }
+
+        ksort($all_level_list);
+        foreach ($all_level_list as $level => $ability) {
+            if (!isset($prev_ability)) {
+                $prev_ability = $ability;  // initial loop
+                continue;
+            }
+            $all_level_list[$level]['Count'] += $prev_ability['Count'];
+            $all_level_list[$level]['Duration'] += $prev_ability['Duration'];
+
+            if (array_key_exists('Buffs', $prev_ability)) {
+                foreach ($prev_ability['Buffs'] as $buff_name => $buff_value) {
+                    if (is_bool($buff_value)) {
+                        $all_level_list[$level]['Buffs'][$buff_name] = $buff_value;  // always $buff_value is true
+                    } else {
+                        // Warning: Undefined array key. But this is intended.
+                        $all_level_list[$level]['Buffs'][$buff_name] += intval($buff_value);
+                    }
+                }
+            }
+
+            $prev_ability = $all_level_list[$level];
+        }
+        return $all_level_list;
+    }
+
+    private function load_env(): void
     {
         $dotenv = Dotenv::createImmutable(__DIR__ . DIRECTORY_SEPARATOR . '..');
         $dotenv->load();
         $this->publish_mob_list = array_map('trim', explode(',', $_ENV['PUBLISH_MOB_LIST']));
     }
 
-    public function get_skilltrees()
+    public function get_skilltrees(): array
     {
         return $this->skilltrees;
     }
 
-    public function get_skills_for_view()
+    public function get_skills_for_view(): array
     {
         return $this->skills_for_view;
+    }
+
+    public function get_translate_beacon_buff(): array
+    {
+        return $this->translate_beacon_buff;
     }
 }
 ?>
