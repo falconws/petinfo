@@ -1,6 +1,6 @@
 {
   "ID": "Warden",
-  "Order": -1,
+  "Order": 1,
   "Name": "古代都市の番人",
   "Icon": {
     "Material": "iron_block"

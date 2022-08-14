@@ -1,6 +1,6 @@
 {
   "ID": "Endermite",
-  "Order": 10,
+  "Order": 12,
   "Name": "【上位】狭間の蟲",
   "Icon": {
     "Material": "nether_star"
@@ -23,22 +23,18 @@
     },
     "Beacon": {
       "Upgrades": {
-        "100": {
+        "100,80": {
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",
-            "Regeneration": "+2"
+            "Regeneration": "+1"
           }
         },
         "100,90,95": {
           "Range": "+3",
           "Duration": "+15",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },

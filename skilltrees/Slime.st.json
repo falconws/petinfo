@@ -1,6 +1,6 @@
 {
   "ID": "Slime",
-  "Order": 30,
+  "Order": 32,
   "Name": "【上位】ぷよぷよ",
   "Icon": {
     "Material": "nether_star"
@@ -28,16 +28,12 @@
         "90": {
           "Range": "+9",
           "Duration": "+30",
-          "Count": "+3",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+3"
         },
         "100": {
           "Count": "+1",
           "Buffs": {
             "Absorption": "+3",
-            "Luck": false,
             "Resistance": "+3",
             "Speed": "+2",
             "Regeneration": "+3"

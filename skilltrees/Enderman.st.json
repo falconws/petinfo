@@ -1,6 +1,6 @@
 {
   "ID": "Enderman",
-  "Order": 12,
+  "Order": 14,
   "Name": "【上位】エンドの住人",
   "Icon": {
     "Material": "nether_star"
@@ -27,7 +27,6 @@
         "90": {
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",
@@ -38,7 +37,6 @@
         "100": {
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1",
             "Strength": "+2"
@@ -46,11 +44,8 @@
         },
         "100,90": {
           "Range": "+5",
-          "Duration": "+15",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Duration": "+18",
+          "Count": "+1"
         }
       }
     },

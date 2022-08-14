@@ -1,7 +1,7 @@
 {
   "ID": "Bee3",
-  "Order": 9,
-  "Name": "女王",
+  "Order": 11,
+  "Name": "【特殊上位】女王",
   "Requirements": [
     "Permission"
   ],
@@ -39,7 +39,6 @@
             "Absorption": "+1",
             "FireResistance": true,
             "JumpBoost": "+2",
-            "Luck": false,
             "Resistance": "+1",
             "WaterBreathing": true,
             "Regeneration": "+1"
@@ -50,7 +49,6 @@
           "Duration": "+30",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1"
           }
@@ -60,7 +58,6 @@
           "Duration": "+30",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+2",
             "Speed": "+2",

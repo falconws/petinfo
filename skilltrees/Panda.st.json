@@ -1,6 +1,6 @@
 {
   "ID": "Panda",
-  "Order": 47,
+  "Order": 49,
   "Name": "【上位】万能パンダ",
   "Icon": {
     "Material": "Bamboo"
@@ -26,7 +26,6 @@
         "90": {
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true,
             "WaterBreathing": true
           }
@@ -34,7 +33,6 @@
         "100": {
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "Resistance": "+2",
             "Speed": "+1",
             "Strength": "+2",
@@ -44,10 +42,7 @@
         "100,80,90": {
           "Range": "+5",
           "Duration": "+10",
-          "Count": "+2",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+2"
         }
       }
     },

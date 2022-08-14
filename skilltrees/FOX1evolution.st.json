@@ -1,6 +1,6 @@
 {
   "ID": "FOX1evolution",
-  "Order": 42,
+  "Order": 44,
   "Name": "【特殊上位】金狐",
   "Icon": {
     "Material": "sweet_berries",
@@ -28,7 +28,6 @@
       "Upgrades": {
         "110": {
           "Buffs": {
-            "Luck": false,
             "Regeneration": "+1"
           }
         },
@@ -39,7 +38,6 @@
           "Buffs": {
             "Absorption": "+1",
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",

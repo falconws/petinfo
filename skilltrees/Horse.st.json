@@ -1,6 +1,6 @@
 {
   "ID": "Horse",
-  "Order": 34,
+  "Order": 36,
   "Name": "【上位】神馬",
   "Icon": {
     "Material": "carrot_on_a_stick"
@@ -30,21 +30,18 @@
           "Buffs": {
             "FireResistance": true,
             "JumpBoost": "+2",
-            "Luck": false,
             "NightVision": true
           }
         },
         "90": {
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
             "Speed": "+1"
           }
         },
         "100": {
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+2",
             "Speed": "+2",
@@ -54,10 +51,7 @@
         "100,80,90": {
           "Range": "+2",
           "Duration": "+10",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },
@@ -108,7 +102,7 @@
       "Upgrades": {
         "1": {
           "Active": true,
-          "Speed": "+60",
+          "Speed": "+100",
           "JumpHeight": "+3"
         }
       }

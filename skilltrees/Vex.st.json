@@ -1,6 +1,6 @@
 {
   "ID": "Vex",
-  "Order": 14,
+  "Order": 16,
   "Name": "【上位】痛みの伝道師",
   "Icon": {
     "Material": "nether_star"
@@ -22,7 +22,6 @@
           "Count": "+2",
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+2",

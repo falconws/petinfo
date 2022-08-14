@@ -1,6 +1,6 @@
 {
   "ID": "Wolf",
-  "Order": 31,
+  "Order": 33,
   "Name": "【上位】狂犬",
   "Icon": {
     "Material": "diamond_sword"
@@ -29,7 +29,6 @@
           "Count": "+2",
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "Speed": "+1",
             "Regeneration": "+1"
           }
@@ -39,7 +38,6 @@
           "Duration": "+14",
           "Count": "+2",
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Speed": "+1",
             "Strength": "+3",

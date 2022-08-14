@@ -1,6 +1,6 @@
 {
   "ID": "Phantom",
-  "Order": 6,
+  "Order": 7,
   "Name": "【上位】悪夢へのいざない",
   "Icon": {
     "Material": "nether_star"
@@ -23,7 +23,6 @@
           "Range": "+5",
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "Speed": "+1",
             "Strength": "+1",
             "Regeneration": "+1"
@@ -33,7 +32,6 @@
           "Count": "+1",
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Speed": "+1",
             "Invisibility": true
@@ -42,10 +40,7 @@
         "100,90": {
           "Range": "+3",
           "Duration": "+15",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },

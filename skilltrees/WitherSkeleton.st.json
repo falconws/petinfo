@@ -1,6 +1,6 @@
 {
   "ID": "WitherSkeleton",
-  "Order": 19,
+  "Order": 21,
   "Name": "【上位】地獄の近衛兵",
   "Icon": {
     "Material": "nether_star"
@@ -29,7 +29,6 @@
           "Duration": "+16",
           "Count": "+4",
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+2",
             "Speed": "+2",

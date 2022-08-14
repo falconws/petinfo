@@ -1,6 +1,6 @@
 {
   "ID": "Squid2",
-  "Order": 4,
+  "Order": 5,
   "Name": "【特殊上位】真なるイカフライ",
   "Icon": {
     "Material": "nether_star",
@@ -33,7 +33,6 @@
             "Absorption": "+1",
             "FireResistance": true,
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",
@@ -46,7 +45,6 @@
         "120": {
           "Range": "+10",
           "Buffs": {
-            "Luck": false,
             "Speed": "+1"
           }
         }

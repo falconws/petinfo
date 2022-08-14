@@ -1,6 +1,6 @@
 {
   "ID": "Skeleton",
-  "Order": 29,
+  "Order": 31,
   "Name": "【上位】狩人",
   "Icon": {
     "Material": "nether_star"
@@ -30,7 +30,6 @@
           "Duration": "+30",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Speed": "+1",
             "Strength": "+1"
@@ -41,7 +40,6 @@
           "Duration": "+8",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "Speed": "+2",
             "Invisibility": true
           }

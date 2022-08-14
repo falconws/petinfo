@@ -1,6 +1,6 @@
 {
   "ID": "Blaze",
-  "Order": 20,
+  "Order": 22,
   "Name": "【上位】マックフライポテト",
   "Icon": {
     "Material": "nether_star"
@@ -28,19 +28,16 @@
         "90": {
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "Strength": "+2"
           }
         },
         "95": {
           "Buffs": {
-            "Luck": false,
             "NightVision": true
           }
         },
         "100": {
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Strength": "+1"
           }
@@ -50,7 +47,6 @@
           "Duration": "+15",
           "Count": "+2",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1"
           }

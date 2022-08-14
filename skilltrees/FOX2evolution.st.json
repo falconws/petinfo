@@ -1,6 +1,6 @@
 {
   "ID": "FOX2evolution",
-  "Order": 44,
+  "Order": 46,
   "Name": "【特殊上位】銀狐",
   "Icon": {
     "Material": "sweet_berries",
@@ -29,7 +29,6 @@
         "120": {
           "Count": "+2",
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Speed": "+1",
             "Invisibility": true
@@ -38,7 +37,6 @@
         "100,80": {
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "Resistance": "+2",
             "Speed": "+1",
             "Strength": "+1",
@@ -49,10 +47,7 @@
         "100,120,90,95": {
           "Range": "+5",
           "Duration": "+15",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },

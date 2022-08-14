@@ -1,6 +1,6 @@
 {
   "ID": "Bee2",
-  "Order": 8,
+  "Order": 10,
   "Name": "兵隊",
   "Icon": {
     "Material": "gold_block"
@@ -32,7 +32,6 @@
           "Count": "+3",
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Strength": "+1",
@@ -41,10 +40,9 @@
         },
         "80,90": {
           "Range": "+4",
-          "Duration": "+6",
+          "Duration": "+18",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Strength": "+1",
             "Regeneration": "+1"

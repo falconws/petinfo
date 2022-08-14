@@ -1,6 +1,6 @@
 {
   "ID": "Villager2",
-  "Order": 17,
+  "Order": 19,
   "Name": "【上位】坑夫",
   "Icon": {
     "Material": "nether_star"
@@ -30,7 +30,6 @@
           "Count": "+3",
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true
           }
         },

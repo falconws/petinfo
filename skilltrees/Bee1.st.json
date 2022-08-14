@@ -1,11 +1,11 @@
 {
   "ID": "Bee1",
-  "Order": 7,
+  "Order": 9,
   "Name": "斥候",
   "Icon": {
     "Material": "iron_block"
   },
-  "RequiredLevel": 10,
+  "RequiredLevel": 1,
   "MaxLevel": 50,
   "Description": [
     "まだ成長途中のハチ",
@@ -31,15 +31,11 @@
         "1,30,50": {
           "Range": "+6",
           "Duration": "+16",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         },
         "1,20,40": {
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Speed": "+1",
             "Invisibility": true

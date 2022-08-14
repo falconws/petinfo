@@ -1,6 +1,6 @@
 {
   "ID": "chicken",
-  "Order": 28,
+  "Order": 30,
   "Name": "【上位】ニワトリの王",
   "Requirements": [
     "Permission"
@@ -33,7 +33,6 @@
           "Buffs": {
             "Absorption": "+1",
             "JumpBoost": "+2",
-            "Luck": false,
             "Speed": "+2",
             "WaterBreathing": true
           }
@@ -41,19 +40,14 @@
         "95": {
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+2",
             "Regeneration": "+1"
           }
         },
         "100": {
           "Range": "+5",
-          "Duration": "+10",
-          "Count": "+1",
-          "Buffs": {
-            "FireResistance": false,
-            "Luck": false
-          }
+          "Duration": "+12",
+          "Count": "+1"
         }
       }
     },
@@ -112,7 +106,7 @@
       "Upgrades": {
         "100": {
           "Active": true,
-          "Speed": "+40",
+          "Speed": "+50",
           "JumpHeight": "+2",
           "CanFly": true
         }

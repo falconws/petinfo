@@ -1,6 +1,6 @@
 {
   "ID": "FOX1",
-  "Order": 41,
+  "Order": 43,
   "Name": "【上位】キツネの嫁入り：朱",
   "Icon": {
     "Material": "sweet_berries"
@@ -29,7 +29,6 @@
           "Count": "+2",
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",

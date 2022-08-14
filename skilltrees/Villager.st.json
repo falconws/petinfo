@@ -1,6 +1,6 @@
 {
   "ID": "Villager",
-  "Order": 18,
+  "Order": 20,
   "Name": "【上位】村長",
   "Icon": {
     "Material": "\t slime"
@@ -29,23 +29,18 @@
           "Duration": "+20",
           "Count": "+1",
           "Buffs": {
-            "JumpBoost": "+1",
-            "Luck": false
+            "JumpBoost": "+1"
           }
         },
         "98": {
           "Range": "+1",
-          "Duration": "+10",
-          "Buffs": {
-            "Luck": false
-          }
+          "Duration": "+10"
         },
         "100,90": {
           "Range": "+3",
           "Duration": "+20",
           "Count": "+2",
           "Buffs": {
-            "Luck": false,
             "Strength": "+1",
             "Regeneration": "+1"
           }

@@ -1,6 +1,6 @@
 {
   "ID": "Turtle",
-  "Order": 22,
+  "Order": 24,
   "Name": "【上位】鶴は千年、亀は・・・",
   "Icon": {
     "Material": "nether_star"
@@ -31,7 +31,6 @@
           "Buffs": {
             "Absorption": "+2",
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+3",
             "WaterBreathing": true,

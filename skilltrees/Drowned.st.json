@@ -1,6 +1,6 @@
 {
   "ID": "Drowned",
-  "Order": 32,
+  "Order": 34,
   "Name": "【上位】海の英雄（腐）",
   "Icon": {
     "Material": "nether_star"
@@ -29,7 +29,6 @@
         "10": {
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
             "Resistance": "+1",
             "Strength": "+1",
             "WaterBreathing": true
@@ -37,7 +36,6 @@
         },
         "50": {
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1",
             "Strength": "+1"
@@ -46,7 +44,6 @@
         "100": {
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
             "Resistance": "+1",
             "Strength": "+1",
             "Regeneration": "+1"
@@ -55,10 +52,7 @@
         "10,100,50,90": {
           "Range": "+1",
           "Duration": "+3",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },

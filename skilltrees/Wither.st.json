@@ -1,6 +1,6 @@
 {
   "ID": "Wither",
-  "Order": 26,
+  "Order": 28,
   "Name": "【上位】破壊者",
   "Icon": {
     "Material": "nether_star"
@@ -31,7 +31,6 @@
           "Count": "+1",
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
             "Speed": "+1",
             "Strength": "+2",
             "Regeneration": "+1"
@@ -44,7 +43,6 @@
           "Buffs": {
             "Absorption": "+1",
             "FireResistance": true,
-            "Luck": false,
             "Resistance": "+2",
             "Strength": "+2",
             "Regeneration": "+1"

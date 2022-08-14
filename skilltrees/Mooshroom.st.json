@@ -1,6 +1,6 @@
 {
   "ID": "Mooshroom",
-  "Order": 37,
+  "Order": 39,
   "Name": "【上位】シチュー無料",
   "Icon": {
     "Material": "nether_star"
@@ -29,7 +29,6 @@
           "Duration": "+15",
           "Count": "+3",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1"
           }
@@ -38,7 +37,6 @@
           "Count": "+1",
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
             "NightVision": true
           }
         },
@@ -49,7 +47,6 @@
           "Buffs": {
             "Absorption": "+2",
             "JumpBoost": "+2",
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1",
             "Regeneration": "+1"

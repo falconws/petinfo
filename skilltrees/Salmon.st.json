@@ -1,6 +1,6 @@
 {
   "ID": "Salmon",
-  "Order": 13,
+  "Order": 15,
   "Name": "【上位】旬のお魚",
   "Icon": {
     "Material": "nether_star"
@@ -27,7 +27,6 @@
           "Count": "+1",
           "Buffs": {
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",
@@ -39,10 +38,7 @@
         "100,90,95": {
           "Range": "+8",
           "Duration": "+30",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },

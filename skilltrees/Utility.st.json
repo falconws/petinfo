@@ -1,6 +1,6 @@
 {
   "ID": "Utility",
-  "Order": 40,
+  "Order": 42,
   "Name": "【基本職】Utility",
   "Icon": {
     "Material": "trapped_chest"
@@ -49,7 +49,6 @@
           "Count": "+2",
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",

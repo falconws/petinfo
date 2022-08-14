@@ -1,6 +1,6 @@
 {
   "ID": "Combat",
-  "Order": 39,
+  "Order": 41,
   "Name": "【基本職】Combat",
   "Icon": {
     "Material": "stone_axe"
@@ -21,7 +21,6 @@
           "Duration": "+18",
           "Count": "+2",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1",
             "Strength": "+2",

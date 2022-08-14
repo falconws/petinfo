@@ -1,6 +1,6 @@
 {
   "ID": "Cow",
-  "Order": 21,
+  "Order": 23,
   "Name": "【上位】牛乳無料",
   "Icon": {
     "Material": "nether_star"
@@ -19,7 +19,6 @@
       "Upgrades": {
         "100": {
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1"
           }
@@ -29,7 +28,6 @@
           "Duration": "+30",
           "Count": "+1",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Strength": "+1",
             "Regeneration": "+1"

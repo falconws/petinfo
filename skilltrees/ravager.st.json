@@ -1,6 +1,6 @@
 {
   "ID": "ravager",
-  "Order": 45,
+  "Order": 47,
   "Name": "【上位】なまえはまだない！",
   "RequiredLevel": 50,
   "MaxLevel": 100,
@@ -27,7 +27,6 @@
           "Duration": "+16",
           "Count": "+2",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Regeneration": "+1"
           }

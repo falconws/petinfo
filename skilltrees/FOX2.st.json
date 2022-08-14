@@ -1,6 +1,6 @@
 {
   "ID": "FOX2",
-  "Order": 43,
+  "Order": 45,
   "Name": "【上位】キツネの嫁入り：蒼",
   "Icon": {
     "Material": "sweet_berries"
@@ -26,7 +26,6 @@
         "100,80": {
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+2",
             "Speed": "+2",
@@ -39,10 +38,7 @@
         "100,80,90,95": {
           "Range": "+2",
           "Duration": "+10",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },

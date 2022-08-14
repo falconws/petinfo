@@ -1,6 +1,6 @@
 {
   "ID": "SnowGolem",
-  "Order": 16,
+  "Order": 18,
   "Name": "【上位】従順な付き人",
   "Icon": {
     "Material": "nether_star"
@@ -26,7 +26,6 @@
         "90": {
           "Duration": "+10",
           "Buffs": {
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1"
           }
@@ -35,15 +34,13 @@
           "Count": "+1",
           "Buffs": {
             "Absorption": "+1",
-            "FireResistance": true,
-            "Luck": false
+            "FireResistance": true
           }
         },
         "100": {
           "Count": "+1",
           "Buffs": {
             "JumpBoost": "+2",
-            "Luck": false,
             "Resistance": "+2",
             "Regeneration": "+1"
           }
@@ -51,10 +48,7 @@
         "100,90": {
           "Range": "+5",
           "Duration": "+10",
-          "Count": "+1",
-          "Buffs": {
-            "Luck": false
-          }
+          "Count": "+1"
         }
       }
     },

@@ -1,6 +1,6 @@
 {
   "ID": "ravagerevolution",
-  "Order": 46,
+  "Order": 48,
   "Name": "【特殊上位】なまえはまだない！",
   "RequiredLevel": 100,
   "MaxLevel": 120,
@@ -27,14 +27,12 @@
           "Duration": "+16",
           "Count": "+2",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Regeneration": "+1"
           }
         },
         "120": {
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
             "Strength": "+2",
             "Regeneration": "+1"

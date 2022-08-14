@@ -1,6 +1,6 @@
 {
   "ID": "Squid",
-  "Order": 3,
+  "Order": 8,
   "Name": "【上位】イカともタコとも知れぬ",
   "Icon": {
     "Material": "nether_star"
@@ -25,7 +25,6 @@
             "Absorption": "+1",
             "FireResistance": true,
             "JumpBoost": "+1",
-            "Luck": false,
             "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",

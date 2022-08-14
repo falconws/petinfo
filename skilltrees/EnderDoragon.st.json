@@ -1,15 +1,14 @@
 {
   "ID": "EnderDoragon",
-  "Order": 5,
-  "Name": "【特殊上位】EnderDoragon",
+  "Order": 6,
+  "Name": "【上位】EnderDoragon",
   "Icon": {
     "Material": "nether_star"
   },
   "RequiredLevel": 90,
   "MaxLevel": 100,
   "Description": [
-    "サポート、防御特化",
-    "攻撃力最低値"
+    "エンドの支配者"
   ],
   "MobTypes": [
     "EnderDragon"
@@ -26,32 +25,38 @@
       "Upgrades": {
         "90": {
           "Range": "+4",
-          "Duration": "+15",
+          "Duration": "+60",
           "Count": "+3",
           "Buffs": {
-            "Luck": false,
             "Resistance": "+1",
-            "Speed": "+1"
+            "Speed": "+1",
+            "Strength": "+1"
           }
         },
         "95": {
+          "Duration": "+18",
           "Count": "+1",
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
-            "NightVision": true
+            "NightVision": true,
+            "Resistance": "+1",
+            "Speed": "+1",
+            "Strength": "+1",
+            "Regeneration": "+1"
           }
         },
         "100": {
           "Range": "+16",
-          "Duration": "+15",
+          "Duration": "+30",
           "Count": "+3",
           "Buffs": {
-            "Absorption": "+2",
-            "JumpBoost": "+2",
-            "Luck": false,
+            "Absorption": "+1",
+            "FireResistance": true,
+            "JumpBoost": "+1",
+            "NightVision": true,
             "Resistance": "+1",
             "Speed": "+1",
+            "Strength": "+2",
             "Regeneration": "+1"
           }
         }
@@ -71,28 +76,21 @@
     "Damage": {
       "Upgrades": {
         "100,50": {
-          "Damage": "+0.5"
+          "Damage": "+30"
         }
       }
     },
     "Heal": {
       "Upgrades": {
-        "100,50,60,70,80,90": {
-          "Health": "+3"
+        "100,80,90": {
+          "Health": "+10"
         }
       }
     },
     "Life": {
       "Upgrades": {
         "%1>1<100": {
-          "Health": "+2"
-        }
-      }
-    },
-    "Pickup": {
-      "Upgrades": {
-        "100": {
-          "Range": "+5"
+          "Health": "+5"
         }
       }
     },
@@ -124,8 +122,8 @@
     "Stomp": {
       "Upgrades": {
         "90": {
-          "Damage": "+1",
-          "Chance": "+100"
+          "Damage": "+30",
+          "Chance": "+10"
         }
       }
     },
@@ -134,6 +132,45 @@
         "100": {
           "Reflection": "+200",
           "Chance": "+20"
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "80": {
+          "Duration": "+5",
+          "Chance": "+80"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "100": {
+          "Chance": "+50"
+        }
+      }
+    },
+    "Ranged": {
+      "Upgrades": {
+        "80": {
+          "Damage": "+30",
+          "Rate": "+20",
+          "Projectile": "DragonFireball"
+        }
+      }
+    },
+    "Wither": {
+      "Upgrades": {
+        "100": {
+          "Duration": "+5",
+          "Chance": "+20"
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "80": {
+          "Active": true
         }
       }
     }
