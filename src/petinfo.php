@@ -111,7 +111,7 @@ class PetInfo
         $all_level_list = [];
         foreach ($beacontree as $required_level => $ability) {
             // Remove false buffs
-            $ability['Buffs'] = array_diff($ability['Buffs'], [false]);
+            if (array_key_exists('Buffs', $ability)) $ability['Buffs'] = array_diff($ability['Buffs'], [false]);
             foreach (explode(',', $required_level) as $level) {
                 if (!array_key_exists($level, $all_level_list)) {
                     $all_level_list[$level]['Count'] = array_key_exists('Count', $ability) ? intval($ability['Count']) : 0;
