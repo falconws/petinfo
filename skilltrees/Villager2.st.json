@@ -39,7 +39,6 @@
           "Count": "+1",
           "Buffs": {
             "FireResistance": true,
-            "Luck": false,
             "Strength": "+1"
           }
         }

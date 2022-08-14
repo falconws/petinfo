@@ -30,7 +30,6 @@
           "Count": "+4",
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
             "Resistance": "+1",
             "Speed": "+1"
           }
@@ -39,7 +38,6 @@
           "Count": "+1",
           "Buffs": {
             "Absorption": "+1",
-            "Luck": false,
             "NightVision": true
           }
         },
@@ -50,7 +48,6 @@
           "Buffs": {
             "Absorption": "+2",
             "JumpBoost": "+2",
-            "Luck": false,
             "Resistance": "+3",
             "Speed": "+1",
             "Regeneration": "+3"
@@ -60,8 +57,7 @@
           "Range": "+10",
           "Duration": "+30",
           "Buffs": {
-            "FireResistance": true,
-            "Luck": false
+            "FireResistance": true
           }
         }
       }
