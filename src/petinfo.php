@@ -109,12 +109,20 @@ class PetInfo
 
     private function make_beacon_details(array $beacontree): array
     {
+        $all_level_list = [];
         foreach ($beacontree as $required_level => $ability) {
+            // Remove false buffs
+            $ability['Buffs'] = array_diff($ability['Buffs'], [false]);
             foreach (explode(',', $required_level) as $level) {
-                // Remove false buffs
-                $ability['Buffs'] = array_diff($ability['Buffs'], [false]);
-
-                $all_level_list[$level] = $ability;
+                if (!array_key_exists($level, $all_level_list)) {
+                    $all_level_list[$level]['Count'] = intval($ability['Count']) ?? 0;
+                    $all_level_list[$level]['Duration'] = intval($ability['Duration']) ?? 0;
+                    // $all_level_list[$level]['Buffs'] = $ability['Buffs'];
+                    continue;
+                }
+                // Same level
+                $all_level_list[$level]['Count'] += intval($ability['Count']) ?? 0;
+                $all_level_list[$level]['Duration'] += intval($ability['Duration']) ?? 0;
 
                 // // Buffs processing
                 // if (!array_key_exists('Buffs', $ability)) continue;
@@ -134,6 +142,15 @@ class PetInfo
         }
 
         ksort($all_level_list);
+        foreach ($all_level_list as $level => $ability) {
+            if (!isset($prev_ability)) {
+                $prev_ability = $ability;  // initial loop
+                continue;
+            }
+            $all_level_list[$level]['Count'] += $prev_ability['Count'];
+            $all_level_list[$level]['Duration'] += $prev_ability['Duration'];
+            $prev_ability = $all_level_list[$level];
+        }
         return $all_level_list;
     }
 
