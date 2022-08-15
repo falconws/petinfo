@@ -3,8 +3,7 @@
   "Order": 0,
   "Name": "【上位】海底の兵士",
   "Icon": {
-    "Material": "nether_star",
-    "Glowing": true
+    "Material": "nether_star"
   },
   "RequiredLevel": 80,
   "MaxLevel": 100,
@@ -13,7 +12,7 @@
     "※30マスまでの飛行制限"
   ],
   "MobTypes": [
-    "Squid"
+    "Guardian"
   ],
   "Skills": {
     "Backpack": {
