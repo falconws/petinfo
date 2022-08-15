@@ -158,6 +158,12 @@ class PetInfo
 
             $prev_ability = $all_level_list[$level];
         }
+
+        // sort beacon buff name in alphabetical order
+        foreach ($all_level_list as $key => $value) {
+            if (array_key_exists('Buffs', $all_level_list[$key])) ksort($all_level_list[$key]['Buffs']);
+        }
+
         return $all_level_list;
     }
 
