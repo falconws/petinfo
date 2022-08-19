@@ -15,7 +15,7 @@
     <div class="contents">
         <a id="contents_1"></a>
         <ul class="list2 list-indent1">
-            <li><a href="#{{ $data['Name'] }}">{{ $data['Name'] }}</a></li>
+            <li><a href="#{{ $data['Name'] }}">{{ $data['Name'] }}: {{ $data['MobTypesJp'] }}</a></li>
         </ul>
     </div>
     @endforeach
