@@ -69,6 +69,11 @@ class PetInfo
             }
         }
         $this->make_skills_for_view();
+
+        // sort by Mob name
+        usort($this->skills_for_view, function($a, $b) {
+            return $a['MobTypes'] <=> $b['MobTypes'];
+        });
     }
 
     private function make_skills_for_view(): void
